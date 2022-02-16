@@ -1,0 +1,62 @@
+﻿<Window x:Class="test2isp11_17.MainGameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test2isp11_17"
+        mc:Ignorable="d"
+        Title="MainGameWindow"
+        Height="450" 
+        Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image Source="Image2.png" Stretch="Fill"/>
+        <Image Margin="170,55,251,323" Source="Image3.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.697"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+
+        <Button 
+            x:Name="GameStart"
+            Margin="185,102,477,96" 
+            Click="GameStart_Click"
+            RenderTransformOrigin="0.5,0.5"
+            Opacity="0"
+            />
+
+        <Button 
+            x:Name="GameSave"
+            Margin="320,102,352,111"
+            Click="GameSsve_Click"
+              Opacity="0"
+            ></Button>
+
+        <Button 
+            x:Name="GameGallery"
+            Margin="445,102,252,129" 
+            Click="GameGallery_Click"
+              Opacity="0"
+            ></Button>
+
+        <Button 
+            x:Name="GameExit"
+            Margin="608,253,133,111" 
+            Click="GameExit_Click"
+            Opacity="0"
+            ></Button>
+        <Button 
+            x:Name="Authors"
+            Margin="445,323,252,15" 
+            RenderTransformOrigin="0.5,0.5" Click="Authors_Click"
+            Opacity="0"
+            />
+
+    </Grid>
+</Window>

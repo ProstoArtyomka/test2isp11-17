@@ -1,0 +1,24 @@
+﻿<Window x:Class="test2isp11_17.GemeStartWindow1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test2isp11_17"
+        mc:Ignorable="d"
+        Title="GemeStartWindow1" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid>
+        <TextBlock
+            Text="начало"
+            ></TextBlock>
+
+        <Button
+            x:Name="BtnBackS" 
+            Margin="353,354,320,35"
+            Content="Назад" 
+            Click="BtnBackS_Click"
+            ></Button>
+
+    </Grid>
+</Window>
