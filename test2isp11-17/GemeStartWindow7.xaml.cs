@@ -15,27 +15,20 @@ using System.Windows.Shapes;
 namespace test2isp11_17
 {
     /// <summary>
-    /// Логика взаимодействия для GemeStartWindow1.xaml
+    /// Логика взаимодействия для GemeStartWindow7.xaml
     /// </summary>
-    public partial class GemeStartWindow1 : Window
+    public partial class GemeStartWindow7 : Window
     {
-        public GemeStartWindow1()
+        public GemeStartWindow7()
         {
             InitializeComponent();
         }
 
-        private void BtnBackS_Click(object sender, RoutedEventArgs e)
-        {
-            MainGameWindow openwindow1 = new MainGameWindow();
-            openwindow1.Show();
-            this.Close();
-        }
-
         private void GoNext_Click_1(object sender, RoutedEventArgs e)
         {
-            GemeStartWindow2 openwindow = new GemeStartWindow2();
-            openwindow.Show();
-            this.Close();
+            //GemeStartWindow8 openwindow = new GemeStartWindow8();
+            //openwindow.Show();
+            //this.Close();
         }
     }
 }

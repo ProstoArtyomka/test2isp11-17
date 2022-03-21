@@ -25,7 +25,7 @@
 
 
         <TextBlock
-            Text="Новелла endless КС64"
+            Text="Новелла endless КС54"
             HorizontalAlignment="Center"
             Grid.Column="1"
             Grid.Row="0"

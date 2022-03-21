@@ -58,6 +58,24 @@
     <Compile Include="AuthorWindow.xaml.cs">
       <DependentUpon>AuthorWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GemeStartWindow2.xaml.cs">
+      <DependentUpon>GemeStartWindow2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GemeStartWindow3.xaml.cs">
+      <DependentUpon>GemeStartWindow3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GemeStartWindow4.xaml.cs">
+      <DependentUpon>GemeStartWindow4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GemeStartWindow5.xaml.cs">
+      <DependentUpon>GemeStartWindow5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GemeStartWindow6.xaml.cs">
+      <DependentUpon>GemeStartWindow6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GemeStartWindow7.xaml.cs">
+      <DependentUpon>GemeStartWindow7.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowGallery.xaml.cs">
       <DependentUpon>WindowGallery.xaml</DependentUpon>
     </Compile>
@@ -66,6 +84,30 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="GemeStartWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GemeStartWindow2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GemeStartWindow3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GemeStartWindow4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GemeStartWindow5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GemeStartWindow6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GemeStartWindow7.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -140,6 +182,36 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Image4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="msk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ramka2png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="girl1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AllHome.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AliceRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GirlYlyana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GirlAce.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="RoomOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="YasenevaTasia\MikuSmile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="YasenevaTasia\MikuBody.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
