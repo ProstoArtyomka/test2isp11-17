@@ -30,6 +30,30 @@
             Grid.RowSpan="3" 
               />
 
+        <Image 
+               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\KorshunovaAlice\AliceBody.png"
+              
+               Grid.ColumnSpan="3"
+
+               Opacity="100" Grid.RowSpan="3" Margin="0,-94,-0.333,264.667"
+               />
+
+        <Image 
+               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\KorshunovaAlice\AliceClothes.png"
+              
+               Grid.ColumnSpan="3"
+
+               Opacity="100" Grid.RowSpan="3" Margin="0,-94,-0.333,264.667"
+               />
+
+        <Image 
+               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\KorshunovaAlice\AliceSmileFace.png"
+              
+               Grid.ColumnSpan="3"
+
+               Opacity="100" Grid.RowSpan="3" Margin="10,-115,-0.333,264.667"
+               />
+
         <Image Margin="-24,22.333,-25,-0.333" 
                Source="ramka2png.png" 
                Stretch="Fill"
@@ -54,7 +78,7 @@
             Grid.ColumnSpan="3"
             Grid.RowSpan="3"
             Click="GoNext_Click_1"
-            Opacity="0" Margin="0,0,0,-7.333"
+            Opacity="0" Margin="0,0,-0.333,-7.333"
             
             >
             

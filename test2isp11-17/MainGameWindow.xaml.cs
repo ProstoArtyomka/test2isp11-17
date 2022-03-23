@@ -22,6 +22,8 @@ namespace test2isp11_17
         public MainGameWindow()
         {
             InitializeComponent();
+
+
         }
 
         private void GameStart_Click(object sender, RoutedEventArgs e)
@@ -38,8 +40,12 @@ namespace test2isp11_17
 
         private void GameExit_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show( "Вы точно хотите выйти? " ,  "Выход ", MessageBoxButton.YesNo);
-            this.Close();
+            var resultClick = MessageBox.Show( "Вы точно хотите выйти? " ,  "Выход ", MessageBoxButton.YesNo);
+            if (resultClick == MessageBoxResult.Yes)
+            {
+                this.Close();
+            }
+            
         }
 
         private void GameGallery_Click(object sender, RoutedEventArgs e)

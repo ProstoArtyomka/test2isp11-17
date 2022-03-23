@@ -30,7 +30,7 @@
             Grid.Row="0"
             Grid.ColumnSpan="3"
             Grid.RowSpan="3"
-          Source="msk.jpg" 
+          Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\City\MainCity.jpg" 
             Stretch="Fill" Margin="0,-16,0,-17"
             
             ></Image>

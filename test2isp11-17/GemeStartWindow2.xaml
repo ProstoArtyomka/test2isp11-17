@@ -58,6 +58,32 @@
             
             ></Button>
 
+        <Image 
+               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\TikhonovaLena\LenaBody.png"
+              
+               Grid.ColumnSpan="3"
+
+               Opacity="100" Grid.RowSpan="3" Margin="0,-86,-0.333,264.667"
+               />
+
+        <Image 
+               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\TikhonovaLena\LenaClothes.png"
+              
+               Grid.ColumnSpan="3"
+
+               Opacity="100" Grid.RowSpan="3" Margin="0,-86,-0.333,264.667"
+               />
+
+        <Image 
+               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\TikhonovaLena\LenaSmileFace.png"
+              
+               Grid.ColumnSpan="3"
+
+               Opacity="100" Grid.RowSpan="3" Margin="0,-86,-0.333,264.667"
+               />
+
+
+
 
 
     </Grid>

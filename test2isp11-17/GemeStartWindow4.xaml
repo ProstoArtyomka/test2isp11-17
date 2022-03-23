@@ -58,6 +58,27 @@
             
             ></Button>
 
+        <Image 
+               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\RyzhovaUlyana\UlyanaBody.png"
+              
+               Grid.ColumnSpan="3"
 
+               Opacity="100" Grid.RowSpan="3" Margin="0,-96,-0.333,264.667"
+               />
+        <Image 
+               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\RyzhovaUlyana\UlyanaClothes.png"
+              
+               Grid.ColumnSpan="3"
+
+               Opacity="100" Grid.RowSpan="3"  Margin="0,-96,-0.333,264.667"
+               />
+
+        <Image 
+               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\RyzhovaUlyana\UlyanaGrinFace.png"
+              
+               Grid.ColumnSpan="3"
+
+               Opacity="100" Grid.RowSpan="3"  Margin="0,-96,-0.333,264.667"
+               />
     </Grid>
 </Window>

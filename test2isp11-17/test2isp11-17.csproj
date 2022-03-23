@@ -208,10 +208,46 @@
     <Resource Include="RoomOut.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="YasenevaTasia\MikuSmile.png" />
+    <Resource Include="KorshunovaAlice\AliceClothes.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="YasenevaTasia\MikuBody.png" />
+    <Resource Include="KorshunovaAlice\AliceBody.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="KorshunovaAlice\AliceSmileFace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TikhonovaLena\LenaSmileFace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TikhonovaLena\LenaBody.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TikhonovaLena\LenaClothes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="YasenevaTasia\TasiaBody.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="YasenevaTasia\TasiaClothes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="YasenevaTasia\TasiaShyFace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="RyzhovaUlyana\UlyanaBody.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="RyzhovaUlyana\UlyanaClothes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="RyzhovaUlyana\UlyanaGrinFace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="City\MainCity.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="College\EveningCollege.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

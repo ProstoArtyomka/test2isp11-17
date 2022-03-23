@@ -38,20 +38,29 @@
                Opacity="100"
                />
 
+
         <Image 
-               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\YasenevaTasia\MikuBody.png"
+               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\YasenevaTasia\TasiaBody.png"
               
                Grid.ColumnSpan="3"
 
-               Opacity="100" Grid.RowSpan="3" Margin="0,-198, 0 ,265"
+               Opacity="100" Grid.RowSpan="3" Margin="0,-128,-0.333,264.667"
                />
 
         <Image 
-               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\YasenevaTasia\MikuSmile.png" 
+               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\YasenevaTasia\TasiaClothes.png"
               
                Grid.ColumnSpan="3"
 
-               Opacity="100" Grid.RowSpan="3" Margin="0,-198, 0 ,265"
+               Opacity="100" Grid.RowSpan="3" Margin="0,-128,-0.333,264.667"
+               />
+
+        <Image 
+               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\YasenevaTasia\TasiaShyFace.png"
+              
+               Grid.ColumnSpan="3"
+
+               Opacity="100" Grid.RowSpan="3" Margin="0,-128,-0.333,264.667"
                />
 
 
