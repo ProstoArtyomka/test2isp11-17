@@ -25,13 +25,13 @@
 
         <Image
             Margin="0,-105,0,97.667"
-               Source="RoomOut.png"
+               Source="/College/CorridorCollege.png"
                Stretch="Fill" Grid.ColumnSpan="3"
             Grid.RowSpan="3" 
               />
 
         <Image Margin="-24,82.333,-25.333,-0.333" 
-               Source="ramka2png.png" 
+               Source="/Decoration/RamaDialog.png" 
                Stretch="Fill"
                Grid.ColumnSpan="3"
                Grid.Row="2"

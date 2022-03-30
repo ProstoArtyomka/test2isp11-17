@@ -10,9 +10,9 @@
         Width="800"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Image Source="Image2.png" Stretch="Fill"/>
+        <Image Source="/Menu/GameMenu.png" Stretch="Fill"/>
         <Image Margin="170,55,251,323"
-               Source="Image3.png" 
+               Source="/Menu/KS54Logo.png" 
                Stretch="Fill"
                RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>

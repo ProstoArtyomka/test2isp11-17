@@ -79,6 +79,9 @@
     <Compile Include="WindowGallery.xaml.cs">
       <DependentUpon>WindowGallery.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\LoadWindow.xaml.cs">
+      <DependentUpon>LoadWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="AuthorWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -115,10 +118,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -129,23 +128,16 @@
     <Compile Include="MainGameWindow.xaml.cs">
       <DependentUpon>MainGameWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Page Include="PageOne.xaml">
+    <Page Include="WindowGallery.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WindowGallery.xaml">
+    <Page Include="Windows\LoadWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PageOne.xaml.cs">
-      <DependentUpon>PageOne.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -172,40 +164,40 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image1.png" />
+    <Resource Include="LoadImage\StartLoadImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image2.png" />
+    <Resource Include="Menu\GameMenu.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image3.png" />
+    <Resource Include="Menu\KS54Logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image4.png" />
+    <Resource Include="BackGround\Authors.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="msk.jpg" />
+    <Resource Include="City\Moskva.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="ramka2png.png" />
+    <Resource Include="Decoration\RamaDialog.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="girl1.jpg" />
+    <Resource Include="BackGround\BackGroudLena.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="AllHome.jpg" />
+    <Resource Include="College\AlfaHome.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="AliceRed.png" />
+    <Resource Include="BackGround\BackGroundAlice.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="GirlYlyana.jpg" />
+    <Resource Include="BackGround\BackGroundlYlyana.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="GirlAce.jpg" />
+    <Resource Include="BackGround\BackGroundTasia.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="RoomOut.png" />
+    <Resource Include="College\CorridorCollege.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="KorshunovaAlice\AliceClothes.png" />
@@ -249,5 +241,6 @@
   <ItemGroup>
     <Resource Include="College\EveningCollege.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

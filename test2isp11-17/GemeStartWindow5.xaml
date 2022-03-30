@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test2isp11_17"
         mc:Ignorable="d"
-        Title="GirlAce"
+        Title="GirlTasia"
          Height="900"
         Width="1600"
         WindowStartupLocation="CenterScreen"
@@ -25,13 +25,13 @@
 
         <Image
             Margin="0,0,0,-7.333"
-               Source="GirlAce.jpg"
+               Source="/BackGround/BackGroundTasia.jpg"
                Stretch="Fill" Grid.ColumnSpan="3"
             Grid.RowSpan="3" 
               />
 
         <Image Margin="-24,22,-25,0" 
-               Source="ramka2png.png" 
+               Source="/Decoration/RamaDialog.png" 
                Stretch="Fill"
                Grid.ColumnSpan="3"
                Grid.Row="2"
@@ -40,7 +40,7 @@
 
 
         <Image 
-               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\YasenevaTasia\TasiaBody.png"
+               Source="/YasenevaTasia/TasiaBody.png"
               
                Grid.ColumnSpan="3"
 
@@ -48,7 +48,7 @@
                />
 
         <Image 
-               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\YasenevaTasia\TasiaClothes.png"
+               Source="/YasenevaTasia/TasiaClothes.png"
               
                Grid.ColumnSpan="3"
 
@@ -56,16 +56,12 @@
                />
 
         <Image 
-               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\YasenevaTasia\TasiaShyFace.png"
+               Source="/YasenevaTasia/TasiaShyFace.png"
               
                Grid.ColumnSpan="3"
 
                Opacity="100" Grid.RowSpan="3" Margin="0,-128,-0.333,264.667"
                />
-
-
-
-
         <TextBlock
             Grid.Row="2"
             FontSize="20"
@@ -73,7 +69,6 @@
             Margin="41,110,40.667,11" Grid.ColumnSpan="3"
             ><Run/><LineBreak/><Run/><LineBreak/><Run Text="       "/>
             <Run Text="Тут будет история"/></TextBlock>
-
 
         <Button
             x:Name="GoNext"
@@ -85,7 +80,5 @@
             Opacity="0"
             
             ></Button>
-
-
     </Grid>
 </Window>

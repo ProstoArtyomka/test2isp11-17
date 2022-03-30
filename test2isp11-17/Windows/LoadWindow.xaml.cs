@@ -10,30 +10,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace test2isp11_17
+namespace test2isp11_17.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для LoadWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LoadWindow : Window
     {
-        public MainWindow()
+        public LoadWindow()
         {
             InitializeComponent();
         }
 
-        private void Exit_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            PageOne openwindow1 = new PageOne();
-            openwindow1.Show();
+            MainGameWindow openwindow2 = new MainGameWindow();
+            openwindow2.Show();
             this.Close();
         }
     }

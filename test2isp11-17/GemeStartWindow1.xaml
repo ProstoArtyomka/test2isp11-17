@@ -30,13 +30,13 @@
             Grid.Row="0"
             Grid.ColumnSpan="3"
             Grid.RowSpan="3"
-          Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\City\MainCity.jpg" 
+          Source="/City/MainCity.jpg" 
             Stretch="Fill" Margin="0,-16,0,-17"
             
             ></Image>
 
         <Image Margin="-24,110,-25.333,0" 
-               Source="ramka2png.png" 
+               Source="/Decoration/RamaDialog.png" 
                Stretch="Fill"
                Grid.ColumnSpan="3"
                Grid.Row="2"

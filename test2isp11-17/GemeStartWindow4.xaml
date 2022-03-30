@@ -25,13 +25,13 @@
 
         <Image
             Margin="0,0,0,-7.333"
-               Source="GirlYlyana.jpg"
+               Source="/BackGround/BackGroundlYlyana.jpg"
                Stretch="Fill" Grid.ColumnSpan="3"
             Grid.RowSpan="3" 
               />
 
         <Image Margin="-24,22.333,-25,-0.333" 
-               Source="ramka2png.png" 
+               Source="/Decoration/RamaDialog.png" 
                Stretch="Fill"
                Grid.ColumnSpan="3"
                Grid.Row="2"
@@ -59,14 +59,14 @@
             ></Button>
 
         <Image 
-               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\RyzhovaUlyana\UlyanaBody.png"
+               Source="/RyzhovaUlyana/UlyanaBody.png"
               
                Grid.ColumnSpan="3"
 
                Opacity="100" Grid.RowSpan="3" Margin="0,-96,-0.333,264.667"
                />
         <Image 
-               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\RyzhovaUlyana\UlyanaClothes.png"
+               Source="/RyzhovaUlyana/UlyanaClothes.png"
               
                Grid.ColumnSpan="3"
 
@@ -74,7 +74,7 @@
                />
 
         <Image 
-               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\RyzhovaUlyana\UlyanaGrinFace.png"
+               Source="/RyzhovaUlyana/UlyanaGrinFace.png"
               
                Grid.ColumnSpan="3"
 

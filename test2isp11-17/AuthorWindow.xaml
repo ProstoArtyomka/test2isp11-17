@@ -8,7 +8,7 @@
         Title="AuthorWindow" Height="450" Width="800"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Image  Source="Image4.png" Stretch="Fill"/>
+        <Image  Source="/BackGround/Authors.png" Stretch="Fill"/>
         <TextBlock
             Text="Авторы"
             VerticalAlignment="Top"

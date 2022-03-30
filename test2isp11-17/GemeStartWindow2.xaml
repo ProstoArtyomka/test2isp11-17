@@ -25,13 +25,13 @@
 
         <Image
             Margin="0,0,0,-7.333"
-               Source="girl1.jpg"
+               Source="/BackGround/BackGroudLena.jpg"
                Stretch="Fill" Grid.ColumnSpan="3"
             Grid.RowSpan="3" 
               />
         
         <Image Margin="-24,22,-25,0" 
-               Source="ramka2png.png" 
+               Source="/Decoration/RamaDialog.png" 
                Stretch="Fill"
                Grid.ColumnSpan="3"
                Grid.Row="2"
@@ -59,7 +59,7 @@
             ></Button>
 
         <Image 
-               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\TikhonovaLena\LenaBody.png"
+               Source="/TikhonovaLena/LenaBody.png"
               
                Grid.ColumnSpan="3"
 
@@ -67,7 +67,7 @@
                />
 
         <Image 
-               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\TikhonovaLena\LenaClothes.png"
+               Source="/TikhonovaLena/LenaClothes.png"
               
                Grid.ColumnSpan="3"
 
@@ -75,16 +75,11 @@
                />
 
         <Image 
-               Source="C:\Users\user\source\repos\test2isp11-17\test2isp11-17\TikhonovaLena\LenaSmileFace.png"
+               Source="/TikhonovaLena/LenaSmileFace.png"
               
                Grid.ColumnSpan="3"
 
                Opacity="100" Grid.RowSpan="3" Margin="0,-86,-0.333,264.667"
                />
-
-
-
-
-
     </Grid>
 </Window>
