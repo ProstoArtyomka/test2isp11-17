@@ -11,25 +11,17 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using test2isp11_17.Windows;
 
-namespace test2isp11_17
+namespace test2isp11_17.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для GemeStartWindow5.xaml
+    /// Логика взаимодействия для OpenArtyomWindow.xaml
     /// </summary>
-    public partial class GemeStartWindow5 : Window
+    public partial class OpenArtyomWindow : Window
     {
-        public GemeStartWindow5()
+        public OpenArtyomWindow()
         {
             InitializeComponent();
-        }
-
-        private void GoNext_Click_1(object sender, RoutedEventArgs e)
-        {
-            OpenArtyomWindow openwindow = new OpenArtyomWindow();
-            openwindow.Show();
-            this.Close();
         }
     }
 }

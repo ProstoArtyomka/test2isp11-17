@@ -82,6 +82,9 @@
     <Compile Include="Windows\LoadWindow.xaml.cs">
       <DependentUpon>LoadWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\OpenArtyomWindow.xaml.cs">
+      <DependentUpon>OpenArtyomWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="AuthorWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -133,6 +136,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\LoadWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\OpenArtyomWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -241,6 +248,18 @@
   <ItemGroup>
     <Resource Include="College\EveningCollege.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Artyom\ArtyomBody3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Artyom\ArtyomNormalFace3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Artyom\ArtyomClothes3.png" />
+  </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Vlad\VladBody3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
