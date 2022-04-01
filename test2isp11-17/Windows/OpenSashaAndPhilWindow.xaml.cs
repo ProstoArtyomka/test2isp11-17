@@ -15,18 +15,18 @@ using System.Windows.Shapes;
 namespace test2isp11_17.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для OpenArtyomWindow.xaml
+    /// Логика взаимодействия для OpenSashaAndPhilWindow.xaml
     /// </summary>
-    public partial class OpenArtyomWindow : Window
+    public partial class OpenSashaAndPhilWindow : Window
     {
-        public OpenArtyomWindow()
+        public OpenSashaAndPhilWindow()
         {
             InitializeComponent();
         }
 
         private void GoNext_Click(object sender, RoutedEventArgs e)
         {
-            OpenVladWindow openwindow = new OpenVladWindow();
+            GemeStartWindow6 openwindow = new GemeStartWindow6();
             openwindow.Show();
             this.Close();
         }

@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace test2isp11_17.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для OpenArtyomWindow.xaml
+    /// Логика взаимодействия для Apartment.xaml
     /// </summary>
-    public partial class OpenArtyomWindow : Window
+    public partial class Apartment : Window
     {
-        public OpenArtyomWindow()
+        public Apartment()
         {
             InitializeComponent();
-        }
-
-        private void GoNext_Click(object sender, RoutedEventArgs e)
-        {
-            OpenVladWindow openwindow = new OpenVladWindow();
-            openwindow.Show();
-            this.Close();
         }
     }
 }

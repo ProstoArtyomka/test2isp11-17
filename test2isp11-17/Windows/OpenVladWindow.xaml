@@ -1,11 +1,11 @@
-﻿<Window x:Class="test2isp11_17.Windows.OpenArtyomWindow"
+﻿<Window x:Class="test2isp11_17.Windows.OpenVladWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test2isp11_17.Windows"
         mc:Ignorable="d"
-        Title="OpenArtyomWindow" 
+        Title="OpenVladWindow"  
         Height="900"
         Width="1600"
         WindowStartupLocation="CenterScreen"
@@ -25,7 +25,7 @@
 
         <Image
             Margin="0,0,0,-7.333"
-               Source="/BackGround/BackGroundArtyom.jpg"
+               Source="/BackGround/BackGroundVlad.jpg"
                Stretch="Fill" Grid.ColumnSpan="3"
             Grid.RowSpan="3" 
               />
@@ -59,27 +59,27 @@
             ></Button>
 
         <Image 
-               Source="/Artyom/ArtyomBody3.png"
+               Source="/Vlad/VladBody3.png"
               
                Grid.ColumnSpan="3"
 
-               Opacity="100" Grid.RowSpan="3" Margin="0,-50,-0.333,264.667"
+               Opacity="100" Grid.RowSpan="3" Margin="0,-21,-0.333,264.667"
                />
 
         <Image 
-               Source="/Artyom/ArtyomNormalFace3.png"
+               Source="/Vlad/VladSmileFace3.png"
               
                Grid.ColumnSpan="3"
 
-               Opacity="100" Grid.RowSpan="3" Margin="0,-47,-0.333,264.667"
+               Opacity="100" Grid.RowSpan="3" Margin="0,-21,-0.333,264.667"
                />
 
         <Image 
-               Source="/Artyom/ArtyomClothes3.png"
+               Source="/Vlad/VladNormalClothes3.png"
               
                Grid.ColumnSpan="3"
 
-               Opacity="100" Grid.RowSpan="3" Margin="0,-50,-0.333,264.667"
+               Opacity="100" Grid.RowSpan="3" Margin="0,-21,-0.333,264.667"
                />
     </Grid>
 </Window>

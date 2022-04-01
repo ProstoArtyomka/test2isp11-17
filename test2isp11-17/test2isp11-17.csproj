@@ -79,11 +79,20 @@
     <Compile Include="WindowGallery.xaml.cs">
       <DependentUpon>WindowGallery.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Apartment.xaml.cs">
+      <DependentUpon>Apartment.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\LoadWindow.xaml.cs">
       <DependentUpon>LoadWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\OpenArtyomWindow.xaml.cs">
       <DependentUpon>OpenArtyomWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\OpenSashaAndPhilWindow.xaml.cs">
+      <DependentUpon>OpenSashaAndPhilWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\OpenVladWindow.xaml.cs">
+      <DependentUpon>OpenVladWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="AuthorWindow.xaml">
       <SubType>Designer</SubType>
@@ -135,11 +144,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\Apartment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\LoadWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\OpenArtyomWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\OpenSashaAndPhilWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\OpenVladWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -257,9 +278,41 @@
   <ItemGroup>
     <Resource Include="Artyom\ArtyomClothes3.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="BackGround\BackGroundArtyom.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Vlad\VladBody3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Vlad\VladSmileFace3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Vlad\VladNormalClothes3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BackGround\BackGroundVlad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sasha\SashaNormalFace3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Phil\PhilBody1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Phil\PhilPivoClothes1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Phil\PhilSmileFace1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sasha\SashaNormalClothes3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BackGround\BackGroundSashaAndPhil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="College\ApartmentEvening.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
