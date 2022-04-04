@@ -11,24 +11,25 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using test2isp11_17.Windows;
 
 namespace test2isp11_17
 {
     /// <summary>
-    /// Логика взаимодействия для GemeStartWindow7.xaml
+    /// Логика взаимодействия для GemeStartWindow3.xaml
     /// </summary>
-    public partial class GemeStartWindow7 : Window
+    public partial class GemeStartWindow3 : Window
     {
-        public GemeStartWindow7()
+        public GemeStartWindow3()
         {
             InitializeComponent();
         }
 
-        private void GoNext_Click_1(object sender, RoutedEventArgs e)
+        private void GoNext_Click(object sender, RoutedEventArgs e)
         {
-            //GemeStartWindow8 openwindow = new GemeStartWindow8();
-            //openwindow.Show();
-            //this.Close();
+            GemeStartWindow4 openwindow = new GemeStartWindow4();
+            openwindow.Show();
+            this.Close();
         }
     }
 }

@@ -1,14 +1,14 @@
-﻿<Window x:Class="test2isp11_17.GemeStartWindow2"
+﻿<Window x:Class="test2isp11_17.GemeStartWindow5"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:test2isp11_17"
+        xmlns:local="clr-namespace:test2isp11_17.Windows"
         mc:Ignorable="d"
-        Title="GirlLena"
-        Height="900"
+        Title="GirlTasia"
+         Height="900"
         Width="1600"
-          WindowStartupLocation="CenterScreen"
+        WindowStartupLocation="CenterScreen"
         >
     <Grid>
         <Grid.ColumnDefinitions>
@@ -25,11 +25,12 @@
 
         <Image
             Margin="0,0,0,-7.333"
-               Source="/BackGround/BackGroudLena.jpg"
-               Stretch="Fill" Grid.ColumnSpan="3"
+            Source="/BackGround/BackGroundTasia.jpg"
+            Stretch="Fill" 
+            Grid.ColumnSpan="3"
             Grid.RowSpan="3" 
               />
-        
+
         <Image Margin="-24,22,-25,0" 
                Source="/Decoration/RamaDialog.png" 
                Stretch="Fill"
@@ -38,14 +39,41 @@
                Opacity="100"
                />
 
+        <Image 
+               Source="/Persons/YasenevaTasia/TasiaBody.png"
+               Grid.ColumnSpan="3"
+               Opacity="100"
+               Grid.RowSpan="3"
+               Margin="0,-128,-0.333,264.667"
+               />
+
+        <Image 
+               Source="/Persons/YasenevaTasia/TasiaClothes.png"     
+               Grid.ColumnSpan="3"
+               Opacity="100" 
+               Grid.RowSpan="3"
+               Margin="0,-128,-0.333,264.667"
+               />
+
+        <Image 
+               Source="/Persons/YasenevaTasia/TasiaShyFace.png"   
+               Grid.ColumnSpan="3"
+               Opacity="100"
+               Grid.RowSpan="3" 
+               Margin="0,-128,-0.333,264.667"
+               />
         <TextBlock
             Grid.Row="2"
             FontSize="20"
             Foreground="Black" 
             Margin="41,110,40.667,11" Grid.ColumnSpan="3"
-            ><Run/><LineBreak/><Run/><LineBreak/><Run Text="       "/>
-            <Run Text="Тут будет история"/></TextBlock>
-
+            ><Run/>
+                <LineBreak/>
+            <Run/>
+                <LineBreak/>
+            <Run Text="       "/>
+            <Run Text="Тут будет история"/>
+        </TextBlock>
 
         <Button
             x:Name="GoNext"
@@ -54,32 +82,7 @@
             Grid.ColumnSpan="3"
             Grid.RowSpan="3"
             Click="GoNext_Click_1"
-            Opacity="0"
-            
-            ></Button>
-
-        <Image 
-               Source="/TikhonovaLena/LenaBody.png"
-              
-               Grid.ColumnSpan="3"
-
-               Opacity="100" Grid.RowSpan="3" Margin="0,-86,-0.333,264.667"
-               />
-
-        <Image 
-               Source="/TikhonovaLena/LenaClothes.png"
-              
-               Grid.ColumnSpan="3"
-
-               Opacity="100" Grid.RowSpan="3" Margin="0,-86,-0.333,264.667"
-               />
-
-        <Image 
-               Source="/TikhonovaLena/LenaSmileFace.png"
-              
-               Grid.ColumnSpan="3"
-
-               Opacity="100" Grid.RowSpan="3" Margin="0,-86,-0.333,264.667"
-               />
+            Opacity="0"      
+            />
     </Grid>
 </Window>

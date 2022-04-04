@@ -25,8 +25,9 @@
 
         <Image
             Margin="0,0,0,-7.333"
-               Source="/BackGround/BackGroundVlad.jpg"
-               Stretch="Fill" Grid.ColumnSpan="3"
+            Source="/BackGround/BackGroundVlad.jpg"
+            Stretch="Fill"
+            Grid.ColumnSpan="3"
             Grid.RowSpan="3" 
               />
 
@@ -43,43 +44,47 @@
             FontSize="20"
             Foreground="Black" 
             Margin="41,110,40.667,11" Grid.ColumnSpan="3"
-            ><Run/><LineBreak/><Run/><LineBreak/><Run Text="       "/>
-            <Run Text="Тут будет история"/></TextBlock>
+            ><Run/>
+                <LineBreak/>
+            <Run/>
+                <LineBreak/>
+            <Run Text="       "/>
+            <Run Text="Тут будет история"/>
+        </TextBlock>
 
 
         <Button
             x:Name="GoNext"
-              Grid.Column="0"
+            Grid.Column="0"
             Grid.Row="0"
             Grid.ColumnSpan="3"
             Grid.RowSpan="3"
             Opacity="0"
-            Click="GoNext_Click"
-            
-            ></Button>
+            Click="GoNext_Click" 
+            />
 
         <Image 
-               Source="/Vlad/VladBody3.png"
-              
+               Source="/Persons/Vlad/VladBody3.png"        
                Grid.ColumnSpan="3"
-
-               Opacity="100" Grid.RowSpan="3" Margin="0,-21,-0.333,264.667"
+               Opacity="100" 
+               Grid.RowSpan="3"
+               Margin="0,-21,-0.333,264.667"
+               />
+        
+        <Image 
+               Source="/Persons/Vlad/VladSmileFace3.png"             
+               Grid.ColumnSpan="3"
+               Opacity="100"
+               Grid.RowSpan="3"
+               Margin="0,-21,-0.333,264.667"
                />
 
         <Image 
-               Source="/Vlad/VladSmileFace3.png"
-              
+               Source="/Persons/Vlad/VladNormalClothes3.png"          
                Grid.ColumnSpan="3"
-
-               Opacity="100" Grid.RowSpan="3" Margin="0,-21,-0.333,264.667"
-               />
-
-        <Image 
-               Source="/Vlad/VladNormalClothes3.png"
-              
-               Grid.ColumnSpan="3"
-
-               Opacity="100" Grid.RowSpan="3" Margin="0,-21,-0.333,264.667"
+               Opacity="100"
+               Grid.RowSpan="3" 
+               Margin="0,-21,-0.333,264.667"
                />
     </Grid>
 </Window>

@@ -26,8 +26,8 @@ namespace test2isp11_17
 
         private void BtnBackS_Click(object sender, RoutedEventArgs e)
         {
-            MainGameWindow openwindow1 = new MainGameWindow();
-            openwindow1.Show();
+            MainGameWindow openwindow = new MainGameWindow();
+            openwindow.Show();
             this.Close();
         }
     }

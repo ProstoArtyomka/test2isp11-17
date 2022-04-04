@@ -55,28 +55,28 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AuthorWindow.xaml.cs">
+    <Compile Include="Windows\AuthorWindow.xaml.cs">
       <DependentUpon>AuthorWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GemeStartWindow2.xaml.cs">
-      <DependentUpon>GemeStartWindow2.xaml</DependentUpon>
+    <Compile Include="Windows\OpenLenaWindow.xaml.cs">
+      <DependentUpon>OpenLenaWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GemeStartWindow3.xaml.cs">
-      <DependentUpon>GemeStartWindow3.xaml</DependentUpon>
+    <Compile Include="Windows\OpenAlisaWindow.xaml.cs">
+      <DependentUpon>OpenAlisaWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GemeStartWindow4.xaml.cs">
-      <DependentUpon>GemeStartWindow4.xaml</DependentUpon>
+    <Compile Include="Windows\OpenYlyanaWindow.xaml.cs">
+      <DependentUpon>OpenYlyanaWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GemeStartWindow5.xaml.cs">
-      <DependentUpon>GemeStartWindow5.xaml</DependentUpon>
+    <Compile Include="Windows\OpenTasiaWindow.xaml.cs">
+      <DependentUpon>OpenTasiaWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GemeStartWindow6.xaml.cs">
-      <DependentUpon>GemeStartWindow6.xaml</DependentUpon>
+    <Compile Include="Windows\OpenCollegeWindow.xaml.cs">
+      <DependentUpon>OpenCollegeWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GemeStartWindow7.xaml.cs">
-      <DependentUpon>GemeStartWindow7.xaml</DependentUpon>
+    <Compile Include="Windows\OpenHallwayCollegeWindow.xaml.cs">
+      <DependentUpon>OpenHallwayCollegeWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WindowGallery.xaml.cs">
+    <Compile Include="Windows\WindowGallery.xaml.cs">
       <DependentUpon>WindowGallery.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\Apartment.xaml.cs">
@@ -94,39 +94,39 @@
     <Compile Include="Windows\OpenVladWindow.xaml.cs">
       <DependentUpon>OpenVladWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="AuthorWindow.xaml">
+    <Page Include="Windows\AuthorWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GemeStartWindow1.xaml">
+    <Page Include="Windows\MoscowWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GemeStartWindow2.xaml">
+    <Page Include="Windows\OpenLenaWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GemeStartWindow3.xaml">
+    <Page Include="Windows\OpenAlisaWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GemeStartWindow4.xaml">
+    <Page Include="Windows\OpenYlyanaWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GemeStartWindow5.xaml">
+    <Page Include="Windows\OpenTasiaWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GemeStartWindow6.xaml">
+    <Page Include="Windows\OpenCollegeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GemeStartWindow7.xaml">
+    <Page Include="Windows\OpenHallwayCollegeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainGameWindow.xaml">
+    <Page Include="Windows\MainGameWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -134,13 +134,13 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="GemeStartWindow1.xaml.cs">
-      <DependentUpon>GemeStartWindow1.xaml</DependentUpon>
+    <Compile Include="Windows\MoscowWindow.xaml.cs">
+      <DependentUpon>MoscowWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainGameWindow.xaml.cs">
+    <Compile Include="Windows\MainGameWindow.xaml.cs">
       <DependentUpon>MainGameWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="WindowGallery.xaml">
+    <Page Include="Windows\WindowGallery.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -228,40 +228,40 @@
     <Resource Include="College\CorridorCollege.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="KorshunovaAlice\AliceClothes.png" />
+    <Resource Include="Persons\KorshunovaAlice\AliceClothes.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="KorshunovaAlice\AliceBody.png" />
+    <Resource Include="Persons\KorshunovaAlice\AliceBody.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="KorshunovaAlice\AliceSmileFace.png" />
+    <Resource Include="Persons\KorshunovaAlice\AliceSmileFace.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="TikhonovaLena\LenaSmileFace.png" />
+    <Resource Include="Persons\TikhonovaLena\LenaSmileFace.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="TikhonovaLena\LenaBody.png" />
+    <Resource Include="Persons\TikhonovaLena\LenaBody.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="TikhonovaLena\LenaClothes.png" />
+    <Resource Include="Persons\TikhonovaLena\LenaClothes.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="YasenevaTasia\TasiaBody.png" />
+    <Resource Include="Persons\YasenevaTasia\TasiaBody.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="YasenevaTasia\TasiaClothes.png" />
+    <Resource Include="Persons\YasenevaTasia\TasiaClothes.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="YasenevaTasia\TasiaShyFace.png" />
+    <Resource Include="Persons\YasenevaTasia\TasiaShyFace.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="RyzhovaUlyana\UlyanaBody.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaBody.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="RyzhovaUlyana\UlyanaClothes.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaClothes.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="RyzhovaUlyana\UlyanaGrinFace.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaGrinFace.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="City\MainCity.jpg" />
@@ -270,43 +270,43 @@
     <Resource Include="College\EveningCollege.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Artyom\ArtyomBody3.png" />
+    <Resource Include="Persons\Artyom\ArtyomBody3.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Artyom\ArtyomNormalFace3.png" />
+    <Resource Include="Persons\Artyom\ArtyomNormalFace3.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Artyom\ArtyomClothes3.png" />
+    <Resource Include="Persons\Artyom\ArtyomClothes3.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="BackGround\BackGroundArtyom.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Vlad\VladBody3.png" />
+    <Resource Include="Persons\Vlad\VladBody3.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Vlad\VladSmileFace3.png" />
+    <Resource Include="Persons\Vlad\VladSmileFace3.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Vlad\VladNormalClothes3.png" />
+    <Resource Include="Persons\Vlad\VladNormalClothes3.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="BackGround\BackGroundVlad.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Sasha\SashaNormalFace3.png" />
+    <Resource Include="Persons\Sasha\SashaNormalFace3.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Phil\PhilBody1.png" />
+    <Resource Include="Persons\Phil\PhilBody1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Phil\PhilPivoClothes1.png" />
+    <Resource Include="Persons\Phil\PhilPivoClothes1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Phil\PhilSmileFace1.png" />
+    <Resource Include="Persons\Phil\PhilSmileFace1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Sasha\SashaNormalClothes3.png" />
+    <Resource Include="Persons\Sasha\SashaNormalClothes3.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="BackGround\BackGroundSashaAndPhil.jpg" />

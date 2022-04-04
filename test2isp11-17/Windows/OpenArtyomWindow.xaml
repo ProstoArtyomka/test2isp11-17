@@ -25,8 +25,8 @@
 
         <Image
             Margin="0,0,0,-7.333"
-               Source="/BackGround/BackGroundArtyom.jpg"
-               Stretch="Fill" Grid.ColumnSpan="3"
+            Source="/BackGround/BackGroundArtyom.jpg"
+            Stretch="Fill" Grid.ColumnSpan="3"
             Grid.RowSpan="3" 
               />
 
@@ -42,10 +42,15 @@
             Grid.Row="2"
             FontSize="20"
             Foreground="Black" 
-            Margin="41,110,40.667,11" Grid.ColumnSpan="3"
-            ><Run/><LineBreak/><Run/><LineBreak/><Run Text="       "/>
-            <Run Text="Тут будет история"/></TextBlock>
-
+            Margin="41,110,40.667,11"
+            Grid.ColumnSpan="3"
+            ><Run/>
+                <LineBreak/>
+            <Run/>
+                <LineBreak/>
+            <Run Text="       "/>
+            <Run Text="Тут будет история"/>
+        </TextBlock>
 
         <Button
             x:Name="GoNext"
@@ -54,32 +59,30 @@
             Grid.ColumnSpan="3"
             Grid.RowSpan="3"
             Opacity="0"
-            Click="GoNext_Click"
-            
-            ></Button>
+            Click="GoNext_Click"      
+            >
+        </Button>
 
         <Image 
-               Source="/Artyom/ArtyomBody3.png"
-              
+               Source="/Persons/Artyom/ArtyomBody3.png"           
                Grid.ColumnSpan="3"
-
                Opacity="100" Grid.RowSpan="3" Margin="0,-50,-0.333,264.667"
                />
 
         <Image 
-               Source="/Artyom/ArtyomNormalFace3.png"
-              
+               Source="/Persons/Artyom/ArtyomNormalFace3.png"
                Grid.ColumnSpan="3"
-
-               Opacity="100" Grid.RowSpan="3" Margin="0,-47,-0.333,264.667"
+               Opacity="100"
+               Grid.RowSpan="3"
+               Margin="0,-47,-0.333,264.667"
                />
 
         <Image 
-               Source="/Artyom/ArtyomClothes3.png"
-              
+               Source="/Persons/Artyom/ArtyomClothes3.png"         
                Grid.ColumnSpan="3"
-
-               Opacity="100" Grid.RowSpan="3" Margin="0,-50,-0.333,264.667"
+               Opacity="100"
+               Grid.RowSpan="3"
+               Margin="0,-50,-0.333,264.667"
                />
     </Grid>
 </Window>

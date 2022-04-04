@@ -11,22 +11,30 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using test2isp11_17.Windows;
 
 namespace test2isp11_17
 {
     /// <summary>
-    /// Логика взаимодействия для AuthorWindow.xaml
+    /// Логика взаимодействия для GemeStartWindow1.xaml
     /// </summary>
-    public partial class AuthorWindow : Window
+    public partial class GemeStartWindow1 : Window
     {
-        public AuthorWindow()
+        public GemeStartWindow1()
         {
             InitializeComponent();
         }
 
         private void BtnBackS_Click(object sender, RoutedEventArgs e)
         {
-            MainGameWindow openwindow = new MainGameWindow();
+            MainGameWindow openwindow1 = new MainGameWindow();
+            openwindow1.Show();
+            this.Close();
+        }
+
+        private void GoNext_Click(object sender, RoutedEventArgs e)
+        {
+            GemeStartWindow2 openwindow = new GemeStartWindow2();
             openwindow.Show();
             this.Close();
         }

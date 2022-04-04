@@ -3,9 +3,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:test2isp11_17"
+        xmlns:local="clr-namespace:test2isp11_17.Windows"
         mc:Ignorable="d"
-        Title="WindowGallery" Height="450" Width="800"
+        Title="WindowGallery"
+        Height="450" 
+        Width="800"
         WindowStartupLocation="CenterScreen"
         >
     <Grid>
@@ -13,13 +15,14 @@
             Text="Заблокировано"
             VerticalAlignment="Top"
             HorizontalAlignment="Center"
-            ></TextBlock>
+            />
 
         <Button
             x:Name="BtnBackS" 
             Margin="336,353,336,36"
-            Content="Назад" Click="BtnBackS_Click"
-            ></Button>
-        
+            Content="Назад"
+            Click="BtnBackS_Click"
+            />
     </Grid>
 </Window>
+

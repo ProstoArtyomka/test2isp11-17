@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using test2isp11_17.Windows;
 
 namespace test2isp11_17
 {
@@ -24,7 +25,7 @@ namespace test2isp11_17
             InitializeComponent();
         }
 
-        private void GoNext_Click_1(object sender, RoutedEventArgs e)
+        private void GoNext_Click(object sender, RoutedEventArgs e)
         {
             GemeStartWindow7 openwindow = new GemeStartWindow7();
             openwindow.Show();

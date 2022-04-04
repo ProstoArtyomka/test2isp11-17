@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:test2isp11_17"
+        xmlns:local="clr-namespace:test2isp11_17.Windows"
         mc:Ignorable="d"
         Title="MainGameWindow"
         Height="450" 
@@ -19,12 +19,11 @@
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="0.697"/>
+                    <RotateTransform Angle="0.753"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-
 
         <Button 
             x:Name="GameStart"
@@ -37,25 +36,24 @@
         <Button 
             x:Name="GameSave"
             Margin="331,102,352,111"
-            Click="GameSsve_Click"
-              Opacity="0"
-            ></Button>
+            Click="GameSave_Click"
+            Opacity="0"
+            />
 
         <Button 
             x:Name="GameGallery"
             Margin="445,102,252,129" 
             Click="GameGallery_Click"
-              Opacity="0"
-            ></Button>
+            Opacity="0"
+            />
 
         <Button 
             x:Name="GameExit"
             Margin="608,253,133,111" 
             Click="GameExit_Click"
             Opacity="0"
-            >
-            
-        </Button>
+            />
+
         <Button 
             x:Name="Authors"
             Margin="445,323,252,15" 
@@ -63,7 +61,6 @@
             Click="Authors_Click"
             Opacity="0"
             />
-
     </Grid>
 </Window>
 

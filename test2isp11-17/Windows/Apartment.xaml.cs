@@ -23,5 +23,12 @@ namespace test2isp11_17.Windows
         {
             InitializeComponent();
         }
+
+        private void GoNext_Click(object sender, RoutedEventArgs e)
+        {
+            //OpenVladWindow openwindow = new OpenVladWindow();
+            //openwindow.Show();
+            //this.Close();
+        }
     }
 }

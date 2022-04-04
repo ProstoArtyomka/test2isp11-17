@@ -15,25 +15,18 @@ using System.Windows.Shapes;
 namespace test2isp11_17
 {
     /// <summary>
-    /// Логика взаимодействия для GemeStartWindow1.xaml
+    /// Логика взаимодействия для AuthorWindow.xaml
     /// </summary>
-    public partial class GemeStartWindow1 : Window
+    public partial class AuthorWindow : Window
     {
-        public GemeStartWindow1()
+        public AuthorWindow()
         {
             InitializeComponent();
         }
 
-        private void BtnBackS_Click(object sender, RoutedEventArgs e)
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
-            MainGameWindow openwindow1 = new MainGameWindow();
-            openwindow1.Show();
-            this.Close();
-        }
-
-        private void GoNext_Click_1(object sender, RoutedEventArgs e)
-        {
-            GemeStartWindow2 openwindow = new GemeStartWindow2();
+            MainGameWindow openwindow = new MainGameWindow();
             openwindow.Show();
             this.Close();
         }

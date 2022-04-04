@@ -3,9 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:test2isp11_17"
+        xmlns:local="clr-namespace:test2isp11_17.Windows"
         mc:Ignorable="d"
-        Title="GirlAlisa" 
+        Title="OpenAlisaWindow" 
          Height="900"
         Width="1600"
         WindowStartupLocation="CenterScreen"
@@ -25,33 +25,34 @@
 
         <Image
             Margin="0,0,0,-7.333"
-               Source="/BackGround/BackGroundAlice.png"
-               Stretch="Fill" Grid.ColumnSpan="3"
+            Source="/BackGround/BackGroundAlice.png"
+            Stretch="Fill" 
+            Grid.ColumnSpan="3"
             Grid.RowSpan="3" 
               />
 
         <Image 
-               Source="/KorshunovaAlice/AliceBody.png"
-              
+               Source="/Persons/KorshunovaAlice/AliceBody.png"              
                Grid.ColumnSpan="3"
-
-               Opacity="100" Grid.RowSpan="3" Margin="0,-94,-0.333,264.667"
+               Opacity="100"
+               Grid.RowSpan="3"
+               Margin="0,-94,-0.333,264.667"
                />
 
         <Image 
-               Source="/KorshunovaAlice/AliceClothes.png"
-              
+               Source="/Persons/KorshunovaAlice/AliceClothes.png"   
                Grid.ColumnSpan="3"
-
-               Opacity="100" Grid.RowSpan="3" Margin="0,-94,-0.333,264.667"
+               Opacity="100" 
+               Grid.RowSpan="3"
+               Margin="0,-94,-0.333,264.667"
                />
 
         <Image 
-               Source="/KorshunovaAlice/AliceSmileFace.png"
-              
+               Source="/Persons/KorshunovaAlice/AliceSmileFace.png"           
                Grid.ColumnSpan="3"
-
-               Opacity="100" Grid.RowSpan="3" Margin="10,-115,-0.333,264.667"
+               Opacity="100"
+               Grid.RowSpan="3" 
+               Margin="10,-115,-0.333,264.667"
                />
 
         <Image Margin="-24,22.333,-25,-0.333" 
@@ -66,9 +67,15 @@
             Grid.Row="2"
             FontSize="20"
             Foreground="Black" 
-            Margin="41,110,40.667,11" Grid.ColumnSpan="3"
-            ><Run/><LineBreak/><Run/><LineBreak/><Run Text="       "/>
-            <Run Text="Тут будет история"/></TextBlock>
+            Margin="41,110,40.667,11"
+            Grid.ColumnSpan="3"
+            ><Run/>
+                <LineBreak/>
+            <Run/>
+                <LineBreak/>
+            <Run Text="       "/>
+            <Run Text="Тут будет история"/>
+        </TextBlock>
 
 
         <Button
@@ -77,11 +84,10 @@
             Grid.Row="0"
             Grid.ColumnSpan="3"
             Grid.RowSpan="3"
-            Click="GoNext_Click_1"
-            Opacity="0" Margin="0,0,-0.333,-7.333"
-            
+            Click="GoNext_Click"
+            Opacity="0" Margin="0,0,-0.333,-7.333"     
             >
-            
+         
         </Button>
       
 
