@@ -24,72 +24,70 @@
         </Grid.RowDefinitions>
 
         <Image
-            Margin="0,0,0,-7.333"
-            Source="/BackGround/BackGroundAlice.png"
-            Stretch="Fill" 
-            Grid.ColumnSpan="3"
-            Grid.RowSpan="3" 
-              />
+                Margin="0,0,0,-7.333"
+                Source="/BackGround/BackGroundAlice.png"
+                Stretch="Fill" 
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="3" 
+             />
 
         <Image 
-               Source="/Persons/KorshunovaAlice/AliceBody.png"              
-               Grid.ColumnSpan="3"
-               Opacity="100"
-               Grid.RowSpan="3"
-               Margin="0,-94,-0.333,264.667"
-               />
+                Source="/Persons/KorshunovaAlice/AliceBody.png"              
+                Grid.ColumnSpan="3"
+                Opacity="100"
+                Grid.RowSpan="3"
+                Margin="0,-94,-0.333,264.667"
+                />
 
         <Image 
-               Source="/Persons/KorshunovaAlice/AliceClothes.png"   
-               Grid.ColumnSpan="3"
-               Opacity="100" 
-               Grid.RowSpan="3"
-               Margin="0,-94,-0.333,264.667"
-               />
+                Source="/Persons/KorshunovaAlice/AliceClothes.png"   
+                Grid.ColumnSpan="3"
+                Opacity="100" 
+                Grid.RowSpan="3"
+                Margin="0,-94,-0.333,264.667"
+                />
 
         <Image 
-               Source="/Persons/KorshunovaAlice/AliceSmileFace.png"           
-               Grid.ColumnSpan="3"
-               Opacity="100"
-               Grid.RowSpan="3" 
-               Margin="10,-115,-0.333,264.667"
-               />
+                Source="/Persons/KorshunovaAlice/AliceSmileFace.png"           
+                Grid.ColumnSpan="3"
+                Opacity="100"
+                Grid.RowSpan="3" 
+                Margin="10,-115,-0.333,264.667"
+                />
 
-        <Image Margin="-24,22.333,-25,-0.333" 
-               Source="/Decoration/RamaDialog.png" 
-               Stretch="Fill"
-               Grid.ColumnSpan="3"
-               Grid.Row="2"
-               Opacity="100"
-               />
+        <Image 
+                Margin="-24,22.333,-25,-0.333" 
+                Source="/Decoration/RamaDialog.png" 
+                Stretch="Fill"
+                Grid.ColumnSpan="3"
+                Grid.Row="2"
+                Opacity="100"
+                />
 
         <TextBlock
-            Grid.Row="2"
-            FontSize="20"
-            Foreground="Black" 
-            Margin="41,110,40.667,11"
-            Grid.ColumnSpan="3"
-            ><Run/>
-                <LineBreak/>
-            <Run/>
-                <LineBreak/>
-            <Run Text="       "/>
-            <Run Text="Тут будет история"/>
-        </TextBlock>
-
+                Grid.Row="2"
+                FontSize="20"
+                Foreground="Black" 
+                Margin="41,110,40.667,11"
+                Grid.ColumnSpan="3"
+                ><Run/>
+                    <LineBreak/>
+                <Run/>
+                    <LineBreak/>
+                <Run Text="       "/>
+                <Run Text="Тут будет история"/>
+          </TextBlock>
+ 
 
         <Button
-            x:Name="GoNext"
-              Grid.Column="0"
-            Grid.Row="0"
-            Grid.ColumnSpan="3"
-            Grid.RowSpan="3"
-            Click="GoNext_Click"
-            Opacity="0" Margin="0,0,-0.333,-7.333"     
-            >
-         
-        </Button>
-      
-
+                x:Name="GoNext"
+                Grid.Column="0"
+                Grid.Row="0"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="3"
+                Click="GoNext_Click"
+                Opacity="0"
+                Margin="0,0,-0.333,-7.333"     
+                />
     </Grid>
 </Window>

@@ -24,7 +24,7 @@ namespace test2isp11_17
             InitializeComponent();
         }
 
-        private void BtnBackS_Click(object sender, RoutedEventArgs e)
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
             MainGameWindow openwindow = new MainGameWindow();
             openwindow.Show();

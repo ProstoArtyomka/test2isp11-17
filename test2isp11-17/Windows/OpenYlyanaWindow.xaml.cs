@@ -24,7 +24,7 @@ namespace test2isp11_17
             InitializeComponent();
         }
 
-        private void GoNext_Click_1(object sender, RoutedEventArgs e)
+        private void GoNext_Click(object sender, RoutedEventArgs e)
         {
             GemeStartWindow5 openwindow = new GemeStartWindow5();
             openwindow.Show();

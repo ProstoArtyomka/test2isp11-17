@@ -24,65 +24,66 @@
         </Grid.RowDefinitions>
 
         <Image
-            Margin="0,0,0,-7.333"
-            Source="/BackGround/BackGroundTasia.jpg"
-            Stretch="Fill" 
-            Grid.ColumnSpan="3"
-            Grid.RowSpan="3" 
-              />
-
-        <Image Margin="-24,22,-25,0" 
-               Source="/Decoration/RamaDialog.png" 
-               Stretch="Fill"
-               Grid.ColumnSpan="3"
-               Grid.Row="2"
-               Opacity="100"
-               />
+                Margin="0,0,0,-7.333"
+                Source="/BackGround/BackGroundTasia.jpg"
+                Stretch="Fill" 
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="3" 
+                />
 
         <Image 
-               Source="/Persons/YasenevaTasia/TasiaBody.png"
-               Grid.ColumnSpan="3"
-               Opacity="100"
-               Grid.RowSpan="3"
-               Margin="0,-128,-0.333,264.667"
-               />
+                Margin="-24,22,-25,0" 
+                Source="/Decoration/RamaDialog.png" 
+                Stretch="Fill"
+                Grid.ColumnSpan="3"
+                Grid.Row="2"
+                Opacity="100"
+                />
 
         <Image 
-               Source="/Persons/YasenevaTasia/TasiaClothes.png"     
-               Grid.ColumnSpan="3"
-               Opacity="100" 
-               Grid.RowSpan="3"
-               Margin="0,-128,-0.333,264.667"
-               />
+                Source="/Persons/YasenevaTasia/TasiaBody.png"
+                Grid.ColumnSpan="3"
+                Opacity="100"
+                Grid.RowSpan="3"
+                Margin="0,-128,-0.333,264.667"
+                />
 
         <Image 
-               Source="/Persons/YasenevaTasia/TasiaShyFace.png"   
-               Grid.ColumnSpan="3"
-               Opacity="100"
-               Grid.RowSpan="3" 
-               Margin="0,-128,-0.333,264.667"
-               />
+                Source="/Persons/YasenevaTasia/TasiaClothes.png"     
+                Grid.ColumnSpan="3"
+                Opacity="100" 
+                Grid.RowSpan="3"
+                Margin="0,-128,-0.333,264.667"
+                />
+
+        <Image 
+                Source="/Persons/YasenevaTasia/TasiaShyFace.png"   
+                Grid.ColumnSpan="3"
+                Opacity="100"
+                Grid.RowSpan="3" 
+                Margin="0,-128,-0.333,264.667"
+                />
         <TextBlock
-            Grid.Row="2"
-            FontSize="20"
-            Foreground="Black" 
-            Margin="41,110,40.667,11" Grid.ColumnSpan="3"
-            ><Run/>
-                <LineBreak/>
-            <Run/>
-                <LineBreak/>
-            <Run Text="       "/>
-            <Run Text="Тут будет история"/>
+               Grid.Row="2"
+                FontSize="20"
+                Foreground="Black" 
+                Margin="41,110,40.667,11" Grid.ColumnSpan="3"
+                ><Run/>
+                    <LineBreak/>
+                <Run/>
+                    <LineBreak/>
+                <Run Text="       "/>
+                <Run Text="Тут будет история"/>
         </TextBlock>
 
         <Button
-            x:Name="GoNext"
-              Grid.Column="0"
-            Grid.Row="0"
-            Grid.ColumnSpan="3"
-            Grid.RowSpan="3"
-            Click="GoNext_Click_1"
-            Opacity="0"      
-            />
+                x:Name="GoNext"
+                Grid.Column="0"
+                Grid.Row="0"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="3"
+                Click="GoNext_Click"
+                Opacity="0"      
+               />
     </Grid>
 </Window>

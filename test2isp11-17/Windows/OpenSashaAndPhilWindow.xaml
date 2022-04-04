@@ -24,79 +24,85 @@
         </Grid.RowDefinitions>
 
         <Image
-            Margin="0,0,0,-7.333"
-               Source="/BackGround/BackGroundSashaAndPhil.jpg"
-               Stretch="Fill" Grid.ColumnSpan="3"
-            Grid.RowSpan="3" 
-              />
+                 Margin="0,0,0,-7.333"
+                 Source="/BackGround/BackGroundSashaAndPhil.jpg"
+                 Stretch="Fill" Grid.ColumnSpan="3"
+                 Grid.RowSpan="3" 
+                />
 
-        <Image Margin="-24,22,-25,0" 
-               Source="/Decoration/RamaDialog.png" 
-               Stretch="Fill"
-               Grid.ColumnSpan="3"
-               Grid.Row="2"
-               Opacity="100"
+        <Image
+                Margin="-24,22,-25,0" 
+                Source="/Decoration/RamaDialog.png" 
+                Stretch="Fill"
+                Grid.ColumnSpan="3"
+                Grid.Row="2"
+                Opacity="100"
                />
 
         <TextBlock
-            Grid.Row="2"
-            FontSize="20"
-            Foreground="Black" 
-            Margin="41,110,40.667,11" Grid.ColumnSpan="3"
-            ><Run/><LineBreak/><Run/><LineBreak/><Run Text="       "/>
-            <Run Text="Тут будет история"/></TextBlock>
+                Grid.Row="2"
+                FontSize="20"
+                Foreground="Black" 
+                Margin="41,110,40.667,11" 
+                Grid.ColumnSpan="3"
+                ><Run/>
+                    <LineBreak/>
+                <Run/>
+                    <LineBreak/>
+                <Run Text="       "/>
+                <Run Text="Тут будет история"/>
+        </TextBlock>
 
 
         <Button
-            x:Name="GoNext"
-              Grid.Column="0"
-            Grid.Row="0"
-            Grid.ColumnSpan="3"
-            Grid.RowSpan="3"
-            Opacity="0"
-            Click="GoNext_Click"
-            
-            ></Button>
-
+                x:Name="GoNext"
+                Grid.Column="0"
+                Grid.Row="0"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="3"
+                Opacity="0"
+                Click="GoNext_Click"
+                />
+        
         <Image 
-               Source="/Persons/Sasha/SashaNormalClothes3.png"
-              
-               Grid.ColumnSpan="3"
-
-               Opacity="100" Grid.RowSpan="3" Margin="399,-35,-0.333,264.667"
+                Source="/Persons/Sasha/SashaNormalClothes3.png"             
+                Grid.ColumnSpan="3"
+                Opacity="100"
+                Grid.RowSpan="3"
+                Margin="399,-35,-0.333,264.667"
                />
 
         <Image 
-               Source="/Persons/Phil/PhilBody1.png"
-              
-               Grid.ColumnSpan="3"
-
-               Opacity="100" Grid.RowSpan="3" Margin="0,-35,330.667,264.667"
-               />
-
-        <Image 
-               Source="/Persons/Sasha/SashaNormalFace3.png"
-              
-               Grid.ColumnSpan="3"
-
-               Opacity="100" Grid.RowSpan="3" Margin="399,-35,-0.333,264.667"
-               />
+                Source="/Persons/Phil/PhilBody1.png"             
+                Grid.ColumnSpan="3"
+                Opacity="100" 
+                Grid.RowSpan="3"
+                Margin="0,-35,330.667,264.667"
+                />
 
         <Image 
-               Source="/Persons/Phil/PhilSmileFace1.png"
-              
-               Grid.ColumnSpan="3"
-
-               Opacity="100" Grid.RowSpan="3" Margin="0,-35,330.667,264.667"
-               />
+                Source="/Persons/Sasha/SashaNormalFace3.png"             
+                Grid.ColumnSpan="3"
+                Opacity="100"
+                Grid.RowSpan="3"
+                Margin="399,-35,-0.333,264.667"
+                />
 
         <Image 
-               Source="/Persons/Phil/PhilPivoClothes1.png"
-              
-               Grid.ColumnSpan="3"
+                Source="/Persons/Phil/PhilSmileFace1.png"    
+                Grid.ColumnSpan="3"
+                Opacity="100"
+                Grid.RowSpan="3" 
+                Margin="0,-35,330.667,264.667"
+                />
 
-               Opacity="100" Grid.RowSpan="3" Margin="0,-35,330.667,264.667"
-               />
+        <Image 
+                Source="/Persons/Phil/PhilPivoClothes1.png"             
+                Grid.ColumnSpan="3"
+                Opacity="100"
+                Grid.RowSpan="3"
+                Margin="0,-35,330.667,264.667"
+                />
     </Grid>
 </Window>
 

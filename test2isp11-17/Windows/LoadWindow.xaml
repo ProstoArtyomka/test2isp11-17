@@ -24,15 +24,17 @@
         </Grid.RowDefinitions>
         
         <Image
-           Grid.ColumnSpan="3" 
-            Grid.RowSpan="3"
-            Source="/LoadImage/StartLoadImage.png" 
-            Stretch="Fill"/>
+                Grid.ColumnSpan="3" 
+                Grid.RowSpan="3"
+                Source="/LoadImage/StartLoadImage.png" 
+                Stretch="Fill"
+                />
+        
         <Button  
-                 Grid.RowSpan="3"     
-                 Grid.ColumnSpan="3"
-                 Click="Button_Click"
-                 Opacity="0"
+               Grid.RowSpan="3"     
+               Grid.ColumnSpan="3"
+               Click="Button_Click"
+               Opacity="0"
             />
     </Grid>
 </Window>

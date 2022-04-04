@@ -26,41 +26,41 @@
         </Image>
 
         <Button 
-            x:Name="GameStart"
-            Margin="185,102,477,96" 
-            Click="GameStart_Click"
-            RenderTransformOrigin="0.5,0.5"
-            Opacity="0"
-            />
+                x:Name="GameStart"
+                Margin="185,102,477,96" 
+                Click="GameStart_Click"
+                RenderTransformOrigin="0.5,0.5"
+                Opacity="0"
+                />
 
         <Button 
-            x:Name="GameSave"
-            Margin="331,102,352,111"
-            Click="GameSave_Click"
-            Opacity="0"
-            />
+                x:Name="GameSave"
+                Margin="331,102,352,111"
+                Click="GameSave_Click"
+                Opacity="0"
+                />
 
         <Button 
-            x:Name="GameGallery"
-            Margin="445,102,252,129" 
-            Click="GameGallery_Click"
-            Opacity="0"
-            />
+                x:Name="GameGallery"
+                Margin="445,102,252,129" 
+                Click="GameGallery_Click"
+                Opacity="0"
+                />
 
         <Button 
-            x:Name="GameExit"
-            Margin="608,253,133,111" 
-            Click="GameExit_Click"
-            Opacity="0"
-            />
+                x:Name="GameExit"
+                Margin="608,253,133,111" 
+                Click="GameExit_Click"
+                Opacity="0"
+                />
 
         <Button 
-            x:Name="Authors"
-            Margin="445,323,252,15" 
-            RenderTransformOrigin="0.5,0.5" 
-            Click="Authors_Click"
-            Opacity="0"
-            />
+                x:Name="Authors"
+                Margin="445,323,252,15" 
+                RenderTransformOrigin="0.5,0.5" 
+                Click="Authors_Click"
+                Opacity="0"
+                />
     </Grid>
 </Window>
 

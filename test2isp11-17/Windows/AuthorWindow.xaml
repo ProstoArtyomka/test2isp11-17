@@ -11,53 +11,56 @@
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Image
-             Source="/BackGround/Authors.png"
-             Stretch="Fill"/>
+                Source="/BackGround/Authors.png"
+                 Stretch="Fill"/>
         <TextBlock
-            Text="Авторы"
-            VerticalAlignment="Top"
-            HorizontalAlignment="Center"
-            Foreground="White" 
-            Height="31"
-            FontSize="20"
-            Width="70"
-            />
+                Text="Авторы"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"
+                Foreground="White" 
+                Height="31"
+                FontSize="20"
+                Width="70"
+                />
 
         <TextBlock
-            Text="Зейнетдинов Артём"
-            TextAlignment="Center"
-            HorizontalAlignment="Center"
-            Foreground="White" 
-            Height="33"
-            FontSize="20"
-            Width="193" Margin="550,94,49,292"
-            />
+                Text="Зейнетдинов Артём"
+                TextAlignment="Center"
+                HorizontalAlignment="Center"
+                Foreground="White" 
+                Height="33"
+                FontSize="20"
+                Width="193"
+                Margin="550,94,49,292"
+                />
 
         <TextBlock
-            Text="Артюхов Даниил"
-            TextAlignment="Center"
-            HorizontalAlignment="Center"
-            Foreground="White" 
-            Height="31"
-            FontSize="20"
-            Width="171" Margin="71,96,550,292" 
-            />
+                Text="Артюхов Даниил"
+                TextAlignment="Center"
+                HorizontalAlignment="Center"
+                Foreground="White" 
+                Height="31"
+                FontSize="20"
+                Width="171"
+                Margin="71,96,550,292" 
+                />
 
         <TextBlock
-            Text="Ливенцев Андрей"
-            TextAlignment="Center"
-            HorizontalAlignment="Center"
-            Foreground="White" 
-            Height="31"
-            FontSize="20"
-            Width="179" Margin="307,36,306,352"
-            />
+                Text="Ливенцев Андрей"
+                TextAlignment="Center"
+                HorizontalAlignment="Center"
+                Foreground="White" 
+                Height="31"
+                FontSize="20"
+                Width="179" 
+                Margin="307,36,306,352"
+                />
 
         <Button
-            x:Name="BtnBack" 
-            Margin="336,379,336,10"
-            Content="Назад"
-            Click="BtnBack_Click"
-            />
+                x:Name="BtnBack" 
+                Margin="336,379,336,10"
+                Content="Назад"
+                Click="BtnBack_Click"
+                />
     </Grid>
 </Window>

@@ -12,17 +12,17 @@
         >
     <Grid>
         <TextBlock
-            Text="Заблокировано"
-            VerticalAlignment="Top"
-            HorizontalAlignment="Center"
-            />
+                Text="Заблокировано"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"
+                />
 
         <Button
-            x:Name="BtnBackS" 
-            Margin="336,353,336,36"
-            Content="Назад"
-            Click="BtnBackS_Click"
-            />
+                x:Name="BtnBack" 
+                Margin="336,353,336,36"
+                Content="Назад"
+                Click="BtnBack_Click"
+                />
     </Grid>
 </Window>
 

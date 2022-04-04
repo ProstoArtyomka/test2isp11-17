@@ -23,54 +23,53 @@
         </Grid.RowDefinitions>
 
         <Image
-            Grid.Column="0"
-            Grid.Row="0"
-            Grid.ColumnSpan="3"
-            Grid.RowSpan="3"
-            Source="/City/MainCity.jpg" 
-            Stretch="Fill" Margin="0,-16,0,-17"    
-            >
-        </Image>
-        
-        <Image Margin="-24,110,-25.333,0" 
-               Source="/Decoration/RamaDialog.png" 
-               Stretch="Fill"
-               Grid.ColumnSpan="3"
-               Grid.Row="2"
-               Opacity="100"
-               />
+                Grid.Column="0"
+                Grid.Row="0"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="3"
+                Source="/City/MainCity.jpg" 
+                Stretch="Fill"
+                Margin="0,-16,0,-17"    
+                 />
+
+        <Image
+                Margin="-24,110,-25.333,0" 
+                Source="/Decoration/RamaDialog.png" 
+                Stretch="Fill"
+                Grid.ColumnSpan="3"
+                Grid.Row="2"
+                Opacity="100"
+                />
 
         <TextBlock
-            Grid.Row="2"
-            FontSize="20"
-            Foreground="Black" 
-            Margin="41,110,40.667,11"
-            Grid.ColumnSpan="3"
-            ><Run/>
-                <LineBreak/>
-            <Run/>
-                <LineBreak/>
-            <Run Text="       "/>
-            <Run Text="Тут будет история"/>
+                Grid.Row="2"
+                FontSize="20"
+                Foreground="Black" 
+                Margin="41,110,40.667,11"
+                Grid.ColumnSpan="3"
+                ><Run/>
+                    <LineBreak/>
+                <Run/>
+                    <LineBreak/>
+                <Run Text="       "/>
+                <Run Text="Тут будет история"/>
         </TextBlock>
 
         <Button
-            x:Name="BtnBackS" 
-            Margin="353,354,320,35"
-            Content="Назад" 
-            Click="BtnBackS_Click"
-            ></Button>
-
+                x:Name="BtnBackS" 
+                Margin="353,354,320,35"
+                Content="Назад" 
+                Click="BtnBackS_Click"
+                />
+        
         <Button
-            x:Name="GoNext"
-            Grid.Column="0"
-            Grid.Row="0"
-            Grid.ColumnSpan="3"
-            Grid.RowSpan="3"
-            Click="GoNext_Click"
-            Opacity="0"
-            
-            ></Button>
-
+                x:Name="GoNext"
+                Grid.Column="0"
+                Grid.Row="0"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="3"
+                Click="GoNext_Click"
+                Opacity="0"
+                />
     </Grid>
 </Window>

@@ -24,44 +24,45 @@
         </Grid.RowDefinitions>
 
         <Image
-              Margin="0,0,-0.333,97.667"
-              Source="/College/ApartmentEvening.png"
-              Stretch="Fill"
-              Grid.ColumnSpan="3"
-              Grid.RowSpan="3" 
-              />
+                Margin="0,0,-0.333,97.667"
+                Source="/College/ApartmentEvening.png"
+                Stretch="Fill"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="3" 
+                />
 
-        <Image Margin="-24,82.333,-25.333,-0.333" 
-               Source="/Decoration/RamaDialog.png" 
-               Stretch="Fill"
-               Grid.ColumnSpan="3"
-               Grid.Row="2"
-               Opacity="100"
-               />
+        <Image 
+                Margin="-24,82.333,-25.333,-0.333" 
+                Source="/Decoration/RamaDialog.png" 
+                Stretch="Fill"
+                Grid.ColumnSpan="3"
+                Grid.Row="2"
+                Opacity="100"
+                />
 
         <TextBlock
-            Grid.Row="2"
-            FontSize="20"
-            Foreground="Black" 
-            Margin="41,110,40.667,11" Grid.ColumnSpan="3"
-            ><Run/>
-                <LineBreak/>
-            <Run/>
-                <LineBreak/>
-            <Run Text="       "/>
-            <Run Text="Тут будет история"/>
+                Grid.Row="2"
+                FontSize="20"
+                Foreground="Black" 
+                Margin="41,110,40.667,11" Grid.ColumnSpan="3"
+                ><Run/>
+                    <LineBreak/>
+                <Run/>
+                    <LineBreak/>
+                <Run Text="       "/>
+                <Run Text="Тут будет история"/>
         </TextBlock>
 
 
         <Button
-            x:Name="GoNext"
-            Grid.Column="0"
-            Grid.Row="0"
-            Grid.ColumnSpan="3"
-            Grid.RowSpan="3"
-            Click="GoNext_Click"
-            Opacity="0"
-            Margin="10,-11,-10,9.667"     
-            />
+                 x:Name="GoNext"
+                 Grid.Column="0"
+                 Grid.Row="0"
+                 Grid.ColumnSpan="3"
+                 Grid.RowSpan="3"
+                 Click="GoNext_Click"
+                 Opacity="0"
+                 Margin="10,-11,-10,9.667"     
+                 />
     </Grid>
 </Window>
