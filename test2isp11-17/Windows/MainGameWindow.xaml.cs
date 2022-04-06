@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Media;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -11,6 +12,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Resources;
+using System.IO;
 
 namespace test2isp11_17
 {
@@ -22,10 +25,18 @@ namespace test2isp11_17
         public MainGameWindow()
         {
             InitializeComponent();
+
+            MusicPlayer();
+        }
+        private MediaPlayer player = new MediaPlayer();
+        private void MusicPlayer()
+        {
+            player.Open(new Uri("/Music/Menu.mp3", UriKind.Relative));
+            player.Play();
         }
         private void GameStart_Click(object sender, RoutedEventArgs e)
         {
-           GemeStartWindow1 openwindow = new GemeStartWindow1();
+            GemeStartWindow1 openwindow = new GemeStartWindow1();
             openwindow.Show();
             this.Close();
         }
