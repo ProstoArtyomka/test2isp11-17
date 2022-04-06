@@ -384,7 +384,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Music\Menu.mp3" />
+    <Content Include="Music\Menu.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />

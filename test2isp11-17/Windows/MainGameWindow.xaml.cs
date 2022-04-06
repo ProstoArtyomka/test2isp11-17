@@ -28,14 +28,19 @@ namespace test2isp11_17
 
             MusicPlayer();
         }
-        private MediaPlayer player = new MediaPlayer();
+
+        private MediaPlayer player;
         private void MusicPlayer()
         {
-            player.Open(new Uri("/Music/Menu.mp3", UriKind.Relative));
+            player = new MediaPlayer();
+            player.Open(new Uri(@"C:\Users\ARTEM\Source\Repos\test2isp11-17\test2isp11-17\Music\Menu.wav"));
             player.Play();
+            player.Volume = 0.2;
         }
+
         private void GameStart_Click(object sender, RoutedEventArgs e)
         {
+            player.Stop();
             GemeStartWindow1 openwindow = new GemeStartWindow1();
             openwindow.Show();
             this.Close();
@@ -45,17 +50,20 @@ namespace test2isp11_17
             var resultClick = MessageBox.Show( "Вы точно хотите выйти? " ,  "Выход ", MessageBoxButton.YesNo);
             if (resultClick == MessageBoxResult.Yes)
             {
+                player.Stop();
                 this.Close();
             }     
         }
         private void GameGallery_Click(object sender, RoutedEventArgs e)
         {
-           WindowGallery openwindow = new WindowGallery();
+            player.Stop();
+            WindowGallery openwindow = new WindowGallery();
             openwindow.Show();
             this.Close();
         }
         private void Authors_Click(object sender, RoutedEventArgs e)
         {
+            player.Stop();
             AuthorWindow openwindow = new AuthorWindow();
             openwindow.Show();
             this.Close();
