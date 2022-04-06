@@ -42,6 +42,7 @@
                 />
 
         <TextBlock
+                x:Name="textblock"
                 Grid.Row="2"
                 FontSize="20"
                 Foreground="Black" 
@@ -51,7 +52,7 @@
                     <LineBreak/>
                 <Run/>
                     <LineBreak/>
-                <Run Text="       "/>
+                <Run Text="      "/>
                 <Run Text="Тут будет история"/>
         </TextBlock>
 
