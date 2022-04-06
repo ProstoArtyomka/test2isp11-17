@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:test2isp11_17.Windows"
         mc:Ignorable="d"
         Title="AuthorWindow"
-        Height="450"
-        Width="800"
+        Height="900"
+        Width="1600"
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Image
@@ -18,9 +18,9 @@
                 VerticalAlignment="Top"
                 HorizontalAlignment="Center"
                 Foreground="White" 
-                Height="31"
-                FontSize="20"
-                Width="70"
+                Height="70"
+                FontSize="50"
+                Width="182" Margin="689,0,721,0"
                 />
 
         <TextBlock
@@ -31,7 +31,7 @@
                 Height="33"
                 FontSize="20"
                 Width="193"
-                Margin="550,94,49,292"
+                Margin="1224,219,175,617"
                 />
 
         <TextBlock
@@ -42,7 +42,7 @@
                 Height="31"
                 FontSize="20"
                 Width="171"
-                Margin="71,96,550,292" 
+                Margin="229,221,1192,617" 
                 />
 
         <TextBlock
@@ -53,14 +53,25 @@
                 Height="31"
                 FontSize="20"
                 Width="179" 
-                Margin="307,36,306,352"
+                Margin="652,75,761,763"
                 />
 
         <Button
                 x:Name="BtnBack" 
-                Margin="336,379,336,10"
+                Margin="673,783,673,8"
                 Content="Назад"
-                Click="BtnBack_Click"
-                />
+                Click="BtnBack_Click" 
+                FontSize="50"
+                Background="{x:Null}"
+                >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-360.173"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
     </Grid>
 </Window>

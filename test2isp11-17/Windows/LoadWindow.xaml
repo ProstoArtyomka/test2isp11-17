@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:test2isp11_17.Windows"
         mc:Ignorable="d"
         Title="LoadWindow"
-        Height="450" 
-        Width="800"
+         Height="900"
+        Width="1600"
         WindowStartupLocation="CenterScreen">
     <Grid>
 
@@ -26,7 +26,7 @@
         <Image
                 Grid.ColumnSpan="3" 
                 Grid.RowSpan="3"
-                Source="/LoadImage/StartLoadImage.png" 
+                Source="/LoadImage/StartLoadImage.jpg" 
                 Stretch="Fill"
                 />
         

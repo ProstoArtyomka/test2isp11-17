@@ -6,28 +6,27 @@
         xmlns:local="clr-namespace:test2isp11_17.Windows"
         mc:Ignorable="d"
         Title="MainGameWindow"
-        Height="450" 
-        Width="800"
+        Height="900"
+        Width="1600"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Image Source="/Menu/GameMenu.png" Stretch="Fill"/>
-        <Image Margin="170,55,251,323"
+        <Image Source="/Menu/GameMenu.jpg" Stretch="Fill"/>
+        <Image Margin="355,98,509,693"
                Source="/Menu/KS54Logo.png" 
-               Stretch="Fill"
-               RenderTransformOrigin="0.5,0.5">
+               Stretch="Fill">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="0.753"/>
-                    <TranslateTransform/>
+                    <RotateTransform Angle="-0.039"/>
+                    <TranslateTransform X="-0.005" Y="0.002"/>
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
 
         <Button 
                 x:Name="GameStart"
-                Margin="185,102,477,96" 
+                Margin="363,208,949,182" 
                 Click="GameStart_Click"
                 RenderTransformOrigin="0.5,0.5"
                 Opacity="0"
@@ -35,28 +34,28 @@
 
         <Button 
                 x:Name="GameSave"
-                Margin="331,102,352,111"
+                Margin="665,208,704,231"
                 Click="GameSave_Click"
                 Opacity="0"
                 />
 
         <Button 
                 x:Name="GameGallery"
-                Margin="445,102,252,129" 
+                Margin="913,208,496,257" 
                 Click="GameGallery_Click"
                 Opacity="0"
                 />
 
         <Button 
                 x:Name="GameExit"
-                Margin="608,253,133,111" 
+                Margin="1212,435,252,231" 
                 Click="GameExit_Click"
                 Opacity="0"
                 />
 
         <Button 
                 x:Name="Authors"
-                Margin="445,323,252,15" 
+                Margin="879,673,496,35" 
                 RenderTransformOrigin="0.5,0.5" 
                 Click="Authors_Click"
                 Opacity="0"

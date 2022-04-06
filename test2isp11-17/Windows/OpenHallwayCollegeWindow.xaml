@@ -24,21 +24,14 @@
         </Grid.RowDefinitions>
 
         <Image
-                Margin="0,0,-0.333,97.667"
+                Margin="0,0,-0.333,184.667"
                 Source="/College/CorridorCollege.png"
                 Stretch="Fill" 
                 Grid.ColumnSpan="3"
                 Grid.RowSpan="3" 
                 />
 
-        <Image
-                Margin="-24,82.333,-25.333,-0.333" 
-                Source="/Decoration/RamaDialog.png" 
-                Stretch="Fill"
-                Grid.ColumnSpan="3"
-                Grid.Row="2"
-                Opacity="100"
-                />
+       
 
         <TextBlock
                 Grid.Row="2"
@@ -65,6 +58,44 @@
                 Click="GoNext_Click"
                 Opacity="0"
                 Margin="10,-11,-10,9.667"     
+                />
+
+        <Image 
+                Source="/Persons/Larisa/LarisaBody2.png"           
+                Grid.ColumnSpan="2"
+                Opacity="100"
+                Grid.RowSpan="3"
+                Margin="134.333,-64,10.667,119.667" 
+                RenderTransformOrigin="0.506,0.539"
+                Grid.Column="1"
+                />
+
+        <Image 
+                Source="/Persons/Larisa/LarisaClothes2.png"
+                Grid.ColumnSpan="2"
+                Opacity="100"
+                Grid.RowSpan="3"
+                Margin="134.333,-64,10.667,119.667" 
+                RenderTransformOrigin="0.506,0.539"
+                Grid.Column="1"
+                />
+
+        <Image 
+                Source="/Persons/Larisa/LarisaNotSmiletFace2.png"            
+               Grid.ColumnSpan="2"
+                Opacity="100"
+                Grid.RowSpan="3"
+                Margin="134.333,-64,10.667,119.667" 
+                RenderTransformOrigin="0.506,0.539"
+                Grid.Column="1"
+                />
+        <Image
+                Margin="-24,82.333,-25.333,-0.333" 
+                Source="/Decoration/RamaDialog.png" 
+                Stretch="Fill"
+                Grid.ColumnSpan="3"
+                Grid.Row="2"
+                Opacity="100"
                 />
     </Grid>
 </Window>
