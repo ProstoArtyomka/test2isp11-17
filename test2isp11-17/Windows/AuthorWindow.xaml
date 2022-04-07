@@ -20,7 +20,8 @@
                 Foreground="White" 
                 Height="70"
                 FontSize="50"
-                Width="182" Margin="689,0,721,0"
+                Width="182"
+                Margin="589,-10,621,-10"
                 />
 
         <TextBlock
@@ -31,7 +32,7 @@
                 Height="33"
                 FontSize="20"
                 Width="193"
-                Margin="1224,219,175,617"
+                Margin="1110,99,89,537"
                 />
 
         <TextBlock
@@ -42,7 +43,7 @@
                 Height="31"
                 FontSize="20"
                 Width="171"
-                Margin="229,221,1192,617" 
+                Margin="123,110,1098,528" 
                 />
 
         <TextBlock
@@ -53,7 +54,7 @@
                 Height="31"
                 FontSize="20"
                 Width="179" 
-                Margin="652,75,761,763"
+                Margin="536,65,677,753"
                 />
 
         <Button

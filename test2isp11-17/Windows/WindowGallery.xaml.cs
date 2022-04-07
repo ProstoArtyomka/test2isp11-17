@@ -22,10 +22,28 @@ namespace test2isp11_17
         public WindowGallery()
         {
             InitializeComponent();
+
+            MusicPlayer();
         }
 
+        private MediaPlayer player;
+        private void MusicPlayer()
+        {
+            player = new MediaPlayer();
+            player.Open(new Uri(@"C:\Users\ARTEM\Source\Repos\test2isp11-17\test2isp11-17\Music\Gallery.wav"));
+            player.MediaEnded += new EventHandler(Media_Ended);
+            player.Play();
+            player.Volume = 0.2;
+        }
+        private void Media_Ended(object sender, EventArgs e)
+        {
+            player.Position = TimeSpan.Zero;
+            player.Play();
+            player.Volume = 0.2;
+        }
         private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
+            player.Stop();
             MainGameWindow openwindow = new MainGameWindow();
             openwindow.Show();
             this.Close();

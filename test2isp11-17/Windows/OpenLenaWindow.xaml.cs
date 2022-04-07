@@ -22,8 +22,25 @@ namespace test2isp11_17
         public GemeStartWindow2()
         {
             InitializeComponent();
+
+            MusicPlayer();
         }
 
+        private MediaPlayer player;
+        private void MusicPlayer()
+        {
+            player = new MediaPlayer();
+            player.Open(new Uri(@"C:\Users\ARTEM\Source\Repos\test2isp11-17\test2isp11-17\Music\Lena.wav"));
+            player.MediaEnded += new EventHandler(Media_Ended);
+            player.Play();
+            player.Volume = 0.2;
+        }
+        private void Media_Ended(object sender, EventArgs e)
+        {
+            player.Position = TimeSpan.Zero;
+            player.Play();
+            player.Volume = 0.2;
+        }
         private void GoNext_Click(object sender, RoutedEventArgs e)
         {
             GemeStartWindow3 openwindow = new GemeStartWindow3();

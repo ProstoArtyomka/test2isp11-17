@@ -23,10 +23,29 @@ namespace test2isp11_17
         public GemeStartWindow1()
         {
             InitializeComponent();
+
+            MusicPlayer();
+        }
+
+        private MediaPlayer player;
+        private void MusicPlayer()
+        {
+            player = new MediaPlayer();
+            player.Open(new Uri(@"C:\Users\ARTEM\Source\Repos\test2isp11-17\test2isp11-17\Music\City.wav"));
+            player.MediaEnded += new EventHandler(Media_Ended);
+            player.Play();
+            player.Volume = 0.2;
+        }
+        private void Media_Ended(object sender, EventArgs e)
+        {
+            player.Position = TimeSpan.Zero;
+            player.Play();
+            player.Volume = 0.2;
         }
 
         private void BtnBackS_Click(object sender, RoutedEventArgs e)
         {
+            player.Stop();
             MainGameWindow openwindow1 = new MainGameWindow();
             openwindow1.Show();
             this.Close();
@@ -34,6 +53,7 @@ namespace test2isp11_17
 
         private void GoNext_Click(object sender, RoutedEventArgs e)
         {
+            player.Stop();
             GemeStartWindow2 openwindow = new GemeStartWindow2();
             openwindow.Show();
             this.Close();
