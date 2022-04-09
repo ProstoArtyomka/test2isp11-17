@@ -27,8 +27,7 @@
                 Grid.ColumnSpan="3" 
                 Grid.RowSpan="3"
                 Source="/LoadImage/StartLoadImage.jpg" 
-                Stretch="Fill"
-                />
+                Stretch="Fill"/>
         
         <Button  
                Grid.RowSpan="3"     
