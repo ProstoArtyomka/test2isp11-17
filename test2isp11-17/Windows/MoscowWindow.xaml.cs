@@ -26,7 +26,6 @@ namespace test2isp11_17
 
             MusicPlayer();
         }
-
         private MediaPlayer player;
         private void MusicPlayer()
         {

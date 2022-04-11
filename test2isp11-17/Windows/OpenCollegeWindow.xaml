@@ -32,7 +32,7 @@
                 />
 
         <Image 
-                Margin="-24,110.333,-25.333,-7.333" 
+                Margin="-24,110.333,-25.333,-0.333" 
                 Source="/Decoration/RamaDialog.png" 
                 Stretch="Fill"
                 Grid.ColumnSpan="3"
@@ -41,10 +41,11 @@
                 />
 
         <TextBlock
+            x:Name="TextBlock"
                 Grid.Row="2"
                 FontSize="20"
                 Foreground="Black" 
-                Margin="41,129.333,40.667,-0.333"
+                Margin="41,129.333,40.667,9.667"
                 Grid.ColumnSpan="3"
                 >
                 <Run Text="        "/>
@@ -52,6 +53,7 @@
                        Text="Тут будет история"
                        FontFamily="Times New Roman"/>
         </TextBlock>
+
 
 
         <Button
