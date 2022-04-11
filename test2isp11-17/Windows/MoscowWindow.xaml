@@ -33,7 +33,7 @@
                  />
 
         <Image 
-                Margin="-24,110.333,-25.333,0.667" 
+                Margin="-24,110.333,-25.333,-17.333" 
                 Source="/Decoration/RamaDialog.png" 
                 Stretch="Fill"
                 Grid.ColumnSpan="3"
@@ -45,7 +45,7 @@
                 Grid.Row="2"
                 FontSize="20"
                 Foreground="Black" 
-                Margin="41,129.333,40.667,10.667"
+                Margin="41,129.333,40.667,-0.333"
                 Grid.ColumnSpan="3"
                 >
                 <Run Text="        "/>

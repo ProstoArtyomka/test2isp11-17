@@ -60,7 +60,7 @@
                 Grid.Column="1"
                 />
         <Image 
-                Margin="-24,110.333,-25.333,0.667" 
+                Margin="-24,110.333,-25.333,-0.333" 
                 Source="/Decoration/RamaDialog.png" 
                 Stretch="Fill"
                 Grid.ColumnSpan="3"
