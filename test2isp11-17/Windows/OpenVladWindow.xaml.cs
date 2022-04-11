@@ -29,5 +29,12 @@ namespace test2isp11_17.Windows
             openwindow.Show();
             this.Close();
         }
+
+        private void GoBack_Click(object sender, RoutedEventArgs e)
+        {
+            OpenArtyomWindow openwindow = new OpenArtyomWindow();
+            openwindow.Show();
+            this.Close();
+        }
     }
 }

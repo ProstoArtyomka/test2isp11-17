@@ -26,9 +26,12 @@ namespace test2isp11_17.Windows
 
         private void GoNext_Click(object sender, RoutedEventArgs e)
         {
-            //OpenVladWindow openwindow = new OpenVladWindow();
-            //openwindow.Show();
-            //this.Close();
+        }
+        private void GoBack_Click(object sender, RoutedEventArgs e)
+        {
+            GemeStartWindow7 opemwindow = new GemeStartWindow7();
+            opemwindow.Show();
+            this.Close();
         }
     }
 }

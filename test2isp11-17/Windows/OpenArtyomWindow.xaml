@@ -44,25 +44,35 @@
                 Grid.Row="2"
                 FontSize="20"
                 Foreground="Black" 
-                Margin="41,110,40.667,11"
+                Margin="41,47.333,40.667,10.667"
                 Grid.ColumnSpan="3"
-                 ><Run/>
-                    <LineBreak/>
-                <Run/>
-                    <LineBreak/>
-                <Run Text="       "/>
-                <Run Text="Тут будет история"/>
+                >
+                <Run Text="        "/>
+                <Run 
+                       Text="Тут будет история"
+                       FontFamily="Times New Roman"/>
         </TextBlock>
 
         <Button
                 x:Name="GoNext"
+                Grid.Column="2"
+                Grid.Row="0"
+                Click="GoNext_Click"
+                Opacity="0" 
+                Margin="430,0,0,270" 
+                Grid.RowSpan="3"  
+                />
+
+        <Button
+                x:Name="GoBack"
                 Grid.Column="0"
                 Grid.Row="0"
-                Grid.ColumnSpan="3"
                 Grid.RowSpan="3"
+                Click="GoBack_Click"
                 Opacity="0"
-                Click="GoNext_Click"      
+                Margin="0,0,430,270" 
                 />
+        
         <Image 
                 Source="/Persons/Artyom/ArtyomBody3.png"           
                 Grid.ColumnSpan="3"

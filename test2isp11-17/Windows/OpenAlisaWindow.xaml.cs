@@ -31,5 +31,12 @@ namespace test2isp11_17
             openwindow.Show();
             this.Close();
         }
+
+        private void GoBack_Click(object sender, RoutedEventArgs e)
+        {
+            GemeStartWindow2 openwindow = new GemeStartWindow2();
+            openwindow.Show();
+            this.Close();
+        }
     }
 }

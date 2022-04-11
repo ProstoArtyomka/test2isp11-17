@@ -42,20 +42,19 @@ namespace test2isp11_17
             player.Play();
             player.Volume = 0.2;
         }
-
-        private void BtnBackS_Click(object sender, RoutedEventArgs e)
-        {
-            player.Stop();
-            MainGameWindow openwindow1 = new MainGameWindow();
-            openwindow1.Show();
-            this.Close();
-        }
-
         private void GoNext_Click(object sender, RoutedEventArgs e)
         {
             player.Stop();
             GemeStartWindow2 openwindow = new GemeStartWindow2();
             openwindow.Show();
+            this.Close();
+        }
+
+        private void GoBack_Click(object sender, RoutedEventArgs e)
+        {
+            player.Stop();
+            MainGameWindow openwindow1 = new MainGameWindow();
+            openwindow1.Show();
             this.Close();
         }
     }

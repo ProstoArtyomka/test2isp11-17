@@ -7,22 +7,26 @@
         xmlns:local="clr-namespace:test2isp11_17.Windows"
         mc:Ignorable="d"
         Title="WindowGallery"
-        Height="900"
-        Width="1600"
+        Height="904.785"
+        Width="1609.57"
         WindowStartupLocation="CenterScreen"
         >
-    <Grid Margin="0,0,-150,-78">
-        <Image Source="/Decoration/Gallery.jpg" Margin="-255,-144,-108,0"/>
-        <Image gif:ImageBehavior.AnimatedSource="/Gifs/Nothing.gif" Margin="0,210,0,0" 
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image Source="/Decoration/Gallery.jpg" Stretch="Fill"  />
+        <Image gif:ImageBehavior.AnimatedSource="/Gifs/Nothing.gif" 
                />
         <Button
                x:Name="BtnBack" 
-                Margin="600,693,612,98"
+                Margin="720,752,720,35"
                 Content="Назад"
+                FontFamily="Times New Roman"
                 Click="BtnBack_Click" 
                 FontSize="50"
                 Foreground="White"
-                Background="{x:Null}" RenderTransformOrigin="0.502,0.231"
+                Background="{x:Null}" BorderBrush="{x:Null}"
                 />
     </Grid>
 </Window>

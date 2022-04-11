@@ -43,7 +43,16 @@ namespace test2isp11_17
         }
         private void GoNext_Click(object sender, RoutedEventArgs e)
         {
+            player.Pause();
             GemeStartWindow3 openwindow = new GemeStartWindow3();
+            openwindow.Show();
+            this.Close();
+        }
+
+        private void GoBack_Click(object sender, RoutedEventArgs e)
+        {
+            player.Pause();
+            GemeStartWindow1 openwindow = new GemeStartWindow1();
             openwindow.Show();
             this.Close();
         }
