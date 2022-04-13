@@ -9,7 +9,7 @@
         WindowStartupLocation="CenterScreen"
         >
     <Grid>
-        
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -41,19 +41,20 @@
                 Opacity="100"
                 />
 
-        <TextBlock
-            x:Name="TextBlock"
+        <TextBox
+            x:Name="TextBox"
                 Grid.Row="2"
                 FontSize="20"
                 Foreground="Black" 
-                Margin="41,129.333,40.667,9.667"
+                Margin="41,128.333,40.667,9.667"
                 Grid.ColumnSpan="3"
-                >
-                <Run Text="        "/>
-                <Run 
-                       Text="Тут будет история"
-                       FontFamily="Times New Roman"/>
-        </TextBlock>
+                FontFamily="Times New Roman" 
+                Text="Тут будет история" 
+                BorderBrush="{x:Null}" 
+                Background="{x:Null}"
+                SelectionBrush="{x:Null}"
+                IsReadOnly="True">
+        </TextBox>
 
 
         <Button
@@ -74,6 +75,16 @@
                 Click="GoBack_Click"
                 Opacity="0"
                 Margin="0,0,430,180" 
+                />
+
+        <Button
+                x:Name="GoText"
+                Grid.Row="0"
+                Click="GoText_Click"
+                Opacity="0" 
+                Grid.RowSpan="3"
+                Grid.ColumnSpan="3"
+                Margin="106,0,106,180"
                 />
     </Grid>
 </Window>

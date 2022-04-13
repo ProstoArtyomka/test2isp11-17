@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -55,6 +58,11 @@ namespace test2isp11_17
             MainGameWindow openwindow1 = new MainGameWindow();
             openwindow1.Show();
             this.Close();
+        }
+
+        private void GoText_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
