@@ -241,13 +241,7 @@
     <Resource Include="Decoration\RamaDialog.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="BackGround\BackGroudLena.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="College\AlfaHome.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="BackGround\BackGroundAlice.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="BackGround\BackGroundlYlyana.jpg" />
@@ -384,6 +378,10 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Persons\YasenevaTasia\TasiaClothes2.png" />
+    <Resource Include="BackGround\BackGroundAlice.jpg" />
+    <Resource Include="BackGround\BackGroundLena.jpg" />
+    <Resource Include="BackGround\BackGroundTasia2.jpg" />
     <Content Include="Music\Final.wav" />
     <Content Include="Music\Gallery.wav" />
     <Content Include="Music\Lena.wav" />

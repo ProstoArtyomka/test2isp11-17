@@ -25,7 +25,7 @@
 
         <Image
                 Margin="0,0,0,-7.333"
-                Source="/BackGround/BackGroundTasia.jpg"
+                Source="/BackGround/BackGroundTasia2.jpg"
                 Stretch="Fill" 
                 Grid.ColumnSpan="3"
                 Grid.RowSpan="3" 
@@ -82,7 +82,7 @@
                 />
 
         <Image 
-                Source="/Persons/YasenevaTasia/TasiaClothes.png"     
+                Source="/Persons/YasenevaTasia/TasiaClothes2.png"     
                 Grid.ColumnSpan="3"
                 Opacity="100" 
                 Grid.RowSpan="3"

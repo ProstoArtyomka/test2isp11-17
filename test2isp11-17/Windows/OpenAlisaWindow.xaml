@@ -25,7 +25,7 @@
 
         <Image
                 Margin="0,0,0,-7.333"
-                Source="/BackGround/BackGroundAlice.png"
+                Source="/BackGround/BackGroundAlice.jpg"
                 Stretch="Fill" 
                 Grid.ColumnSpan="3"
                 Grid.RowSpan="3" 
