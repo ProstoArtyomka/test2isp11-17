@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using System.Resources;
 using System.IO;
 
+
 namespace test2isp11_17
 {
     /// <summary>
@@ -29,15 +30,15 @@ namespace test2isp11_17
             MusicPlayer();
         }
 
-        private MediaPlayer player;
+        private MediaPlayer player = new MediaPlayer();
         private void MusicPlayer()
         {
-            player = new MediaPlayer();
-            player.Open(new Uri(@"C:\Users\ARTEM\Source\Repos\test2isp11-17\test2isp11-17\Music\Menu.wav"));
+            player.Open(new Uri("..\\..\\Music\\Menu.WAV", UriKind.RelativeOrAbsolute));
             player.MediaEnded += new EventHandler(Media_Ended);
             player.Play();
             player.Volume = 0.2;
         }
+
         private void Media_Ended(object sender, EventArgs e)
         {
             player.Position = TimeSpan.Zero;

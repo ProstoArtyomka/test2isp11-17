@@ -47,20 +47,23 @@
                 Opacity="100"
                 />
 
-        <TextBox
-            x:Name="TextBox"
+        <TextBlock
+            x:Name="HistoryText"
                 Grid.Row="2"
                 FontSize="20"
                 Foreground="Black" 
                 Margin="50,128.333,40.667,9.667"
                 Grid.ColumnSpan="3"
                 FontFamily="Times New Roman" 
-                Text="Тут будет история" 
-                BorderBrush="{x:Null}" 
+                Text=""  
                 Background="{x:Null}"
-                SelectionBrush="{x:Null}"
-                IsReadOnly="True">
-        </TextBox>
+            >
+            <TextBlock.Style>
+                <Style>
+                    <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                </Style>
+            </TextBlock.Style>  
+        </TextBlock>
 
 
         <Button
