@@ -33,7 +33,7 @@ namespace test2isp11_17
         private void MusicPlayer()
         {
             player = new MediaPlayer();
-            player.Open(new Uri(@"C:\Users\user\source\repos\test2isp11-17\test2isp11-17\Music\Main.wav"));
+            player.Open(new Uri(@"C:\Users\ARTEM\Source\Repos\test2isp11-17\test2isp11-17\Music\Menu.wav"));
             player.MediaEnded += new EventHandler(Media_Ended);
             player.Play();
             player.Volume = 0.2;

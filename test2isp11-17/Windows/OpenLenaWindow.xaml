@@ -8,7 +8,11 @@
         Title="OpenLenaWindow"
         Height="900"
         Width="1600"
-          WindowStartupLocation="CenterScreen"
+        MaxHeight="900"
+        MaxWidth="1600"
+        MinHeight="900"
+        MinWidth="1600"
+        WindowStartupLocation="CenterScreen"
         >
     <Grid>
         <Grid.ColumnDefinitions>

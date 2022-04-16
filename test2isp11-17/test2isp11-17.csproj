@@ -37,7 +37,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>GameLogo\Miku.ico</ApplicationIcon>
+    <ApplicationIcon>IconGame.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -364,9 +364,6 @@
     <Resource Include="Decoration\Gallery.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="GameLogo\Miku.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <COMReference Include="WMPLib">
       <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
       <VersionMajor>1</VersionMajor>
@@ -382,6 +379,8 @@
     <Resource Include="BackGround\BackGroundAlice.jpg" />
     <Resource Include="BackGround\BackGroundLena.jpg" />
     <Resource Include="BackGround\BackGroundTasia2.jpg" />
+    <Resource Include="GameLogo\IconGame.ico" />
+    <Resource Include="IconGame.ico" />
     <Content Include="Music\Final.wav" />
     <Content Include="Music\Gallery.wav" />
     <Content Include="Music\Lena.wav" />

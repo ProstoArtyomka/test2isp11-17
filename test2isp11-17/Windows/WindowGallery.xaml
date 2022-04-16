@@ -7,8 +7,12 @@
         xmlns:local="clr-namespace:test2isp11_17.Windows"
         mc:Ignorable="d"
         Title="WindowGallery"
-        Height="904.785"
-        Width="1609.57"
+        Height="900"
+        Width="1600"
+        MaxHeight="900"
+        MaxWidth="1600"
+        MinHeight="900"
+        MinWidth="1600"
         WindowStartupLocation="CenterScreen"
         >
     <Grid >
