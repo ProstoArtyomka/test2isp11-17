@@ -24,7 +24,6 @@ namespace test2isp11_17
     /// </summary>
     public partial class GemeStartWindow1 : Window
     {
-        DispatcherTimer timer = new DispatcherTimer();
         public GemeStartWindow1()
         {
             InitializeComponent();
@@ -32,12 +31,14 @@ namespace test2isp11_17
             MusicPlayer();
 
             Text();
+
             timer.Start();
 
         }
+        DispatcherTimer timer = new DispatcherTimer();
         private void Text()
         {
-            timer.Interval = new TimeSpan(0, 0, 0, 0, 40);// Определяем время для построения 50 мс
+            timer.Interval = new TimeSpan(0, 0, 0, 0, 40);
             timer.Tick += Timer_Tick;
         }
 
@@ -77,11 +78,10 @@ namespace test2isp11_17
         private void GoNext_Click(object sender, RoutedEventArgs e)
         {
             player.Stop();
-            GemeStartWindow2 openwindow = new GemeStartWindow2();
+            GemeStartWindow3 openwindow = new GemeStartWindow3();
             openwindow.Show();
             this.Close();
         }
-
         private void GoBack_Click(object sender, RoutedEventArgs e)
         {
             player.Stop();
