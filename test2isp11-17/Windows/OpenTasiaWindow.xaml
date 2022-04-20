@@ -45,16 +45,21 @@
                />
 
         <TextBlock
+            x:Name="HistoryText"
                 Grid.Row="2"
-                FontSize="20"
+                FontSize="33"
                 Foreground="Black" 
-                Margin="41,47.333,40.667,10.667"
+                Margin="45,43.333,40.667,19.667"
                 Grid.ColumnSpan="3"
-                >
-                <Run Text="        "/>
-                <Run 
-                       Text="Тут будет история"
-                       FontFamily="Times New Roman"/>
+                FontFamily="/test2isp11-17;component/Montserrat/#Montserrat Medium"
+                Text=""  
+                Background="{x:Null}"
+            >
+            <TextBlock.Style>
+                <Style>
+                    <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                </Style>
+            </TextBlock.Style>
         </TextBlock>
 
         <Button

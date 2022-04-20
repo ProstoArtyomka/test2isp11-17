@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace test2isp11_17
 {
@@ -22,19 +23,66 @@ namespace test2isp11_17
         public GemeStartWindow4()
         {
             InitializeComponent();
+
+            MusicPlayer();
+
+            Text();
+
+            timer.Start();
+
+        }
+        DispatcherTimer timer = new DispatcherTimer();
+        private void Text()
+        {
+            timer.Interval = new TimeSpan(0, 0, 0, 0, 40);
+            timer.Tick += Timer_Tick;
         }
 
+
+        int i = 0;
+        char[] text = "    Вторая красавица являлась самой яркой из них - Рыжова Ульяна. Девушка с детства была непоседой, душа компании. Всегда весёлая, добрая. Иногда слишком даже надоедливая. Её оптимизм не давал никому грустить, она словно лучик солнца. Рыжие волосы придавали ей более детский вид. Маленький аккуратный носик, тонкие губки.".ToCharArray();
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                HistoryText.Text += text[i];
+            }
+            catch (IndexOutOfRangeException)
+            {
+                HistoryText.Text = "    Вторая красавица являлась самой яркой из них - Рыжова Ульяна. Девушка с детства была непоседой, душа компании. Всегда весёлая, добрая. Иногда слишком даже надоедливая. Её оптимизм не давал никому грустить, она словно лучик солнца. Рыжие волосы придавали ей более детский вид. Маленький аккуратный носик, тонкие губки.";
+                i = -1;
+                timer.Stop();
+            }
+            i++;
+        }
+
+        private MediaPlayer player;
+        private void MusicPlayer()
+        {
+            player = new MediaPlayer();
+            player.Open(new Uri("..\\..\\Music\\Ylyana.WAV", UriKind.RelativeOrAbsolute));
+            player.MediaEnded += new EventHandler(Media_Ended);
+            player.Play();
+            player.Volume = 0.2;
+        }
+        private void Media_Ended(object sender, EventArgs e)
+        {
+            player.Position = TimeSpan.Zero;
+            player.Play();
+            player.Volume = 0.2;
+        }
         private void GoNext_Click(object sender, RoutedEventArgs e)
         {
-            GemeStartWindow5 openwindow = new GemeStartWindow5();
+            player.Stop();
+            GemeStartWindow2 openwindow = new GemeStartWindow2();
             openwindow.Show();
             this.Close();
         }
-
         private void GoBack_Click(object sender, RoutedEventArgs e)
         {
-            GemeStartWindow3 openwindow = new GemeStartWindow3();
-            openwindow.Show();
+            player.Stop();
+            GemeStartWindow3 openwindow1 = new GemeStartWindow3();
+            openwindow1.Show();
             this.Close();
         }
     }

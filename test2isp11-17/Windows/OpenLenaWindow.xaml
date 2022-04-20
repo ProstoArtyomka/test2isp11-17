@@ -47,11 +47,11 @@
         <TextBlock
             x:Name="HistoryText"
                 Grid.Row="2"
-                FontSize="26"
+                FontSize="38"
                 Foreground="Black" 
                 Margin="45,43.333,40.667,19.667"
                 Grid.ColumnSpan="3"
-                FontFamily="Times New Roman" 
+                FontFamily="/test2isp11-17;component/Montserrat/#Montserrat Medium"
                 Text=""  
                 Background="{x:Null}"
             >

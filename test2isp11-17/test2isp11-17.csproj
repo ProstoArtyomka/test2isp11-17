@@ -219,6 +219,24 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="Montserrat\Montserrat-Black.ttf" />
+    <Resource Include="Montserrat\Montserrat-BlackItalic.ttf" />
+    <Resource Include="Montserrat\Montserrat-Bold.ttf" />
+    <Resource Include="Montserrat\Montserrat-BoldItalic.ttf" />
+    <Resource Include="Montserrat\Montserrat-ExtraBold.ttf" />
+    <Resource Include="Montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <Resource Include="Montserrat\Montserrat-ExtraLight.ttf" />
+    <Resource Include="Montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <Resource Include="Montserrat\Montserrat-Italic.ttf" />
+    <Resource Include="Montserrat\Montserrat-Light.ttf" />
+    <Resource Include="Montserrat\Montserrat-LightItalic.ttf" />
+    <Resource Include="Montserrat\Montserrat-Medium.ttf" />
+    <Resource Include="Montserrat\Montserrat-MediumItalic.ttf" />
+    <Resource Include="Montserrat\Montserrat-Regular.ttf" />
+    <Resource Include="Montserrat\Montserrat-SemiBold.ttf" />
+    <Resource Include="Montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <Resource Include="Montserrat\Montserrat-Thin.ttf" />
+    <Resource Include="Montserrat\Montserrat-ThinItalic.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -375,12 +393,15 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Music\Tasia.wav" />
+    <Content Include="Music\Ylyana.wav" />
     <Resource Include="Persons\YasenevaTasia\TasiaClothes2.png" />
     <Resource Include="BackGround\BackGroundAlice.jpg" />
     <Resource Include="BackGround\BackGroundLena.jpg" />
     <Resource Include="BackGround\BackGroundTasia2.jpg" />
     <Resource Include="GameLogo\IconGame.ico" />
     <Resource Include="IconGame.ico" />
+    <Content Include="Music\Alisa.wav" />
     <Content Include="Music\Final.wav" />
     <Content Include="Music\Gallery.wav" />
     <Content Include="Music\Lena.wav" />
