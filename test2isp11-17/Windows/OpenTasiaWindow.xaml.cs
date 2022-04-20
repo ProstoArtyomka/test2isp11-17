@@ -50,7 +50,6 @@ namespace test2isp11_17
             }
             catch (IndexOutOfRangeException)
             {
-                HistoryText.Text = "    Четвёртая девушка, самая скромная из всех - Ясенева Тася. Девушка очень добрая, по отношению к другим, доверчивая. Всегда придет на помощь. Но её внешность соответствует Снежной Королеве. Волосы достигали щиколоток, пряди окрашены в бирюзовой-волнистый цвет. Бледное личико покрыто румянцем. Ее глаза, отображают любовь к миру, одновременно замораживают.";
                 i = -1;
                 timer.Stop();
             }
@@ -75,7 +74,7 @@ namespace test2isp11_17
         private void GoNext_Click(object sender, RoutedEventArgs e)
         {
             player.Stop();
-            OpenArtyomWindow openwindow = new OpenArtyomWindow();
+            Apartment openwindow = new Apartment();
             openwindow.Show();
             this.Close();
         }

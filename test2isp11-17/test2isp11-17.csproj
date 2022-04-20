@@ -37,7 +37,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>IconGame.ico</ApplicationIcon>
+    <ApplicationIcon>GameLogo\logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -253,9 +253,6 @@
     <Resource Include="BackGround\Authors.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="City\Moskva.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Decoration\RamaDialog.png" />
   </ItemGroup>
   <ItemGroup>
@@ -393,14 +390,15 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="GameLogo\logo.ico" />
+    <Content Include="BackSound\AlarmСlock.wav" />
+    <Content Include="Music\HideAndSeek.wav" />
     <Content Include="Music\Tasia.wav" />
     <Content Include="Music\Ylyana.wav" />
     <Resource Include="Persons\YasenevaTasia\TasiaClothes2.png" />
     <Resource Include="BackGround\BackGroundAlice.jpg" />
     <Resource Include="BackGround\BackGroundLena.jpg" />
     <Resource Include="BackGround\BackGroundTasia2.jpg" />
-    <Resource Include="GameLogo\IconGame.ico" />
-    <Resource Include="IconGame.ico" />
     <Content Include="Music\Alisa.wav" />
     <Content Include="Music\Final.wav" />
     <Content Include="Music\Gallery.wav" />
