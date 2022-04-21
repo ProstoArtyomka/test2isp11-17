@@ -295,13 +295,13 @@
     <Resource Include="Persons\YasenevaTasia\TasiaShyFace.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Persons\RyzhovaUlyana\UlyanaBody.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaBody1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Persons\RyzhovaUlyana\UlyanaClothes.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaClothes1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Persons\RyzhovaUlyana\UlyanaGrinFace.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaGrinFace1.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="City\MainCity.jpg" />
@@ -390,8 +390,12 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaAngryFace5.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaBody5.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaClothes5.png" />
     <Resource Include="GameLogo\logo.ico" />
     <Content Include="BackSound\AlarmСlock.wav" />
+    <Content Include="BackSound\Door.wav" />
     <Content Include="Music\HideAndSeek.wav" />
     <Content Include="Music\Tasia.wav" />
     <Content Include="Music\Ylyana.wav" />

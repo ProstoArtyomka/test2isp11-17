@@ -41,7 +41,7 @@ namespace test2isp11_17.Windows
         int i = 0;
         char[] text = "    Время подходило к семи утра. Всем девушкам пора уже вставать, идти на учёбу. Но они похоже даже не думают об этом. Слишком уж вчерашняя вечеринка на них повлияла. Девочки до такой степени вчера отжигали до четырёх часов утра, так сказать, прощались с летом, что сейчас даже проснуться не могут. Но настырный будильник совершенно не жалел девчонок.".ToCharArray();
         char[] text1 = "    Первой это надоело Тасе. Она начала будить других девочек. Алиса быстро забегает в ванную комнату, захлопывая дверь перед Ульяниным носом.".ToCharArray();
-        char[] text2 = "    Имачао имачао имачачао".ToCharArray();
+        char[] text2 = "    Дура! - вскрикивает рыжая девушка вслед подруге.".ToCharArray();
         private void Timer_Tick(object sender, EventArgs e)
         {
             try
@@ -73,6 +73,13 @@ namespace test2isp11_17.Windows
             sound.Play();
             sound.Volume = 0.3;
         }
+        private void SoundPlay2()
+        {
+            sound = new MediaPlayer();
+            sound.Open(new Uri("..\\..\\BackSound\\Door.WAV", UriKind.RelativeOrAbsolute));
+            sound.Play();
+            sound.Volume = 0.3;
+        }
         private void Media_Ended(object sender, EventArgs e)
         {
             player.Position = TimeSpan.Zero;
@@ -93,6 +100,7 @@ namespace test2isp11_17.Windows
 
             if (click == 2)
             {
+                SoundPlay2();
                 HistoryText.Text = " ";
                 text = text2;
                 timer.Start();

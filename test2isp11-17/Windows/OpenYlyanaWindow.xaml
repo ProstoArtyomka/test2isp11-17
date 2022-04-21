@@ -83,14 +83,14 @@
                 />
 
         <Image 
-                Source="/Persons/RyzhovaUlyana/UlyanaBody.png"             
+                Source="/Persons/RyzhovaUlyana/UlyanaBody1.png"             
                 Grid.ColumnSpan="3"
                 Opacity="100"
                 Grid.RowSpan="3"
                 Margin="0,-96,-0.333,264.667"
                 />
         <Image 
-               Source="/Persons/RyzhovaUlyana/UlyanaClothes.png"           
+               Source="/Persons/RyzhovaUlyana/UlyanaClothes1.png"           
                Grid.ColumnSpan="3"
                Opacity="100" 
                Grid.RowSpan="3"  
@@ -98,7 +98,7 @@
                />
 
         <Image 
-               Source="/Persons/RyzhovaUlyana/UlyanaGrinFace.png"             
+               Source="/Persons/RyzhovaUlyana/UlyanaGrinFace1.png"             
                Grid.ColumnSpan="3"
                Opacity="100"
                Grid.RowSpan="3"
