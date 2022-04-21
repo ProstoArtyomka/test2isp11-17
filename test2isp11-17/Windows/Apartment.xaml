@@ -82,14 +82,5 @@
                 Opacity="0"
                 Margin="0,0,430,180" 
                 />
-        <Button
-                x:Name="GoText"
-                Grid.Row="0"
-                Click ="GoText_Click"
-                Opacity="0" 
-                Grid.RowSpan="3"
-                Grid.ColumnSpan="3"
-                Margin="106,0,106,180"
-                />
     </Grid>
 </Window>

@@ -38,10 +38,10 @@ namespace test2isp11_17.Windows
             timer.Tick += Timer_Tick;
         }
 
-
         int i = 0;
         char[] text = "    Время подходило к семи утра. Всем девушкам пора уже вставать, идти на учёбу. Но они похоже даже не думают об этом. Слишком уж вчерашняя вечеринка на них повлияла. Девочки до такой степени вчера отжигали до четырёх часов утра, так сказать, прощались с летом, что сейчас даже проснуться не могут. Но настырный будильник совершенно не жалел девчонок.".ToCharArray();
         char[] text1 = "    Первой это надоело Тасе. Она начала будить других девочек. Алиса быстро забегает в ванную комнату, захлопывая дверь перед Ульяниным носом.".ToCharArray();
+        char[] text2 = "    Имачао имачао имачачао".ToCharArray();
         private void Timer_Tick(object sender, EventArgs e)
         {
             try
@@ -79,12 +79,33 @@ namespace test2isp11_17.Windows
             player.Play();
             player.Volume = 0.1;
         }
+        int click = 0;
         private void GoNext_Click(object sender, RoutedEventArgs e)
         {
-            player.Stop();
-            //GemeStartWindow3 openwindow = new GemeStartWindow3();
-            //openwindow.Show();
-            //this.Close();
+            click++;
+            if (click == 1)
+            {
+                SoundPlay();
+                HistoryText.Text = " ";
+                text = text1;
+                timer.Start();
+            }
+
+            if (click == 2)
+            {
+                HistoryText.Text = " ";
+                text = text2;
+                timer.Start();
+            }
+
+            if (click == 3)
+            {
+                player.Stop();
+                GemeStartWindow3 openwindow = new GemeStartWindow3();
+                openwindow.Show();
+                this.Close();
+            }
+
         }
         private void GoBack_Click(object sender, RoutedEventArgs e)
         {
@@ -92,14 +113,6 @@ namespace test2isp11_17.Windows
             GemeStartWindow5 opemwindow = new GemeStartWindow5();
             opemwindow.Show();
             this.Close();
-        }
-
-        private void GoText_Click(object sender, RoutedEventArgs e)
-        {
-            SoundPlay();
-            HistoryText.Text = " ";
-            text = text1;
-            timer.Start();
         }
     }
 }
