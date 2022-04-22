@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using test2isp11_17.Windows;
 
 namespace test2isp11_17.Windows
 {
@@ -100,6 +101,9 @@ namespace test2isp11_17.Windows
 
             if (click == 2)
             {
+                CenterRightImageBody.Opacity = 1;
+                CenterRightImageClothes.Opacity = 1;
+                CenterRightImageFace.Opacity = 1;
                 SoundPlay2();
                 HistoryText.Text = " ";
                 text = text2;

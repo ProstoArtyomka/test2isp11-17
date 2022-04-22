@@ -28,32 +28,127 @@
         </Grid.RowDefinitions>
 
         <Image
-                Margin="0,0,-0.333,160.667"
-                Source="/College/ApartmentEvening.png"
-                Stretch="Fill"
-                Grid.ColumnSpan="3"
-                Grid.RowSpan="3" 
-                />
+            Margin="0,0,-0.333,160.667"
+            Source="/College/ApartmentEvening.png"
+            Stretch="Fill"
+            Grid.ColumnSpan="3"
+            Grid.RowSpan="3" 
+            />
 
         <Image 
-                Margin="-24,110.333,-25.333,0.667" 
-                Source="/Decoration/RamaDialog.png" 
-                Stretch="Fill"
-                Grid.ColumnSpan="3"
-                Grid.Row="2"
-                Opacity="100"
-                />
+            x:Name="LeftImageBody"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="-11,0,9.667,123"
+            />
+        <Image 
+            x:Name="LeftImageClothes"          
+            Opacity="100"
+            Grid.RowSpan="3"
+            Margin="-11,0,9.667,123"
+            />
 
+        <Image 
+            x:Name="LeftImageFace"            
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="-11,0,9.667,123"
+            />
+
+        <Image 
+            x:Name="CenterLeftImageBody"         
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="358,0,174,123"
+            />
+        <Image 
+            x:Name="CenterLeftImageClothes"         
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="358,0,174,123"
+            />
+
+        <Image 
+            x:Name="CenterLeftImageFace"          
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="358,0,174,123"
+            />
+
+        <Image 
+            x:Name="CenterRightImageBody"
+            Source="/Persons/RyzhovaUlyana/UlyanaBody5.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="204,0,326.667,123"
+            Grid.Column="1"
+            />
+        <Image 
+            x:Name="CenterRightImageClothes"
+            Source="/Persons/RyzhovaUlyana/UlyanaClothes5.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="204,0,326.667,123"
+            Grid.Column="1"
+            />
+
+        <Image 
+            x:Name="CenterRightImageFace" 
+            Source="/Persons/RyzhovaUlyana/UlyanaAngryFace5.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="204,0,326.667,123"
+            Grid.Column="1"
+            />
+
+        <Image 
+            x:Name="RightImageBody"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="45,0,-45.333,123"
+            Grid.Column="2"
+            />
+        <Image 
+            x:Name="RightImageClothes"      
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="45,0,-45.333,123"
+            Grid.Column="2"
+            />
+
+        <Image 
+            x:Name="RightImageFace"         
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="45,0,-45.333,123"
+            Grid.Column="2"
+            />
+        <Image 
+            Margin="-24,110.333,-25.333,0.667" 
+            Source="/Decoration/RamaDialog.png" 
+            Stretch="Fill"
+            Grid.ColumnSpan="3"
+            Grid.Row="2"
+            Opacity="100"
+            />
         <TextBlock
             x:Name="HistoryText"
-                Grid.Row="2"
-                FontSize="24"
-                Foreground="Black" 
-                Margin="50,128.333,40.667,9.667"
-                Grid.ColumnSpan="3"
-                FontFamily="/test2isp11-17;component/Montserrat/#Montserrat Medium" 
-                Text=""  
-                Background="{x:Null}"
+            Grid.Row="2"
+            FontSize="24"
+            Foreground="Black" 
+            Margin="44,127.333,42.667,11"
+            Grid.ColumnSpan="3"
+            FontFamily="/test2isp11-17;component/Montserrat/#Montserrat Medium" 
+            Text=""  
+            Background="{x:Null}"
             >
             <TextBlock.Style>
                 <Style>
@@ -61,8 +156,6 @@
                 </Style>
             </TextBlock.Style>
         </TextBlock>
-
-
         <Button
                 x:Name="GoNext"
                 Grid.Column="2"
