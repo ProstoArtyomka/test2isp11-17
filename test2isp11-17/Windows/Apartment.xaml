@@ -82,7 +82,7 @@
             Grid.ColumnSpan="2"
             Opacity="0"
             Grid.RowSpan="3"
-            Margin="358,0,174,123"
+            Margin="358,0,174,121"
             />
         <Image 
             x:Name="CenterLeftImageClothes"  
@@ -90,7 +90,7 @@
             Grid.ColumnSpan="2"
             Opacity="0"
             Grid.RowSpan="3"
-            Margin="358,0,174,123"
+            Margin="358,0,174,121"
             />
         <Image 
             x:Name="CenterLeftImageClothes2"  
@@ -98,7 +98,7 @@
             Grid.ColumnSpan="2"
             Opacity="0"
             Grid.RowSpan="3"
-            Margin="358,0,174,123"
+            Margin="358,0,174,121"
             />
 
         <Image 
@@ -107,7 +107,7 @@
             Grid.ColumnSpan="2"
             Opacity="0"
             Grid.RowSpan="3"
-            Margin="358,0,174,123"
+            Margin="358,0,174,121"
             />
         <!--Право-центральный персонаж-->
         <Image 
@@ -139,7 +139,7 @@
             />
         <Image 
             x:Name="CenterRightImageClothes2"
-            Source="/Persons/RyzhovaUlyana/UlyanaClothesStreet4.png"
+            Source="/Persons/RyzhovaUlyana/UlyanaClothesCollege4.png"
             Grid.ColumnSpan="2"
             Opacity="0"
             Grid.RowSpan="3"

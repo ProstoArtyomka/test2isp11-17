@@ -94,6 +94,9 @@
     <Compile Include="Windows\AuthorWindow.xaml.cs">
       <DependentUpon>AuthorWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\EveningOfTheFirstDayWindow.xaml.cs">
+      <DependentUpon>EveningOfTheFirstDayWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\OpenLenaWindow.xaml.cs">
       <DependentUpon>OpenLenaWindow.xaml</DependentUpon>
     </Compile>
@@ -131,6 +134,10 @@
       <DependentUpon>OpenVladWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="Windows\AuthorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\EveningOfTheFirstDayWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -254,9 +261,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Decoration\RamaDialog.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="College\AlfaHome.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="BackGround\BackGroundlYlyana.jpg" />
@@ -387,6 +391,13 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaShyFace4.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaNormalFace4.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaClothesCollegeOK4.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaClothesCollege4.png" />
+    <Resource Include="Persons\Vlad\VladSmileFace1.png" />
+    <Resource Include="Persons\Vlad\VladClothesStreet1.png" />
+    <Resource Include="Persons\Vlad\VladBody1.png" />
     <Resource Include="Persons\RyzhovaUlyana\UlyanaSmileFace4.png" />
     <Resource Include="Persons\RyzhovaUlyana\UlyanaClothesStreet4.png" />
     <Resource Include="Persons\RyzhovaUlyana\UlyanaBody4.png" />
@@ -407,6 +418,9 @@
     <Resource Include="College\Kitchen.jpg" />
     <Content Include="BackSound\AlarmСlock.wav" />
     <Content Include="BackSound\Door.wav" />
+    <Resource Include="College\Auditorium.jpg" />
+    <Resource Include="College\ApartmentNight.jpg" />
+    <Content Include="Music\AlleyCat.wav" />
     <Content Include="Music\HideAndSeek.wav" />
     <Content Include="Music\Tasia.wav" />
     <Content Include="Music\Ylyana.wav" />
