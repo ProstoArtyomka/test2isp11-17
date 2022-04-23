@@ -26,44 +26,75 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
+        <!--Фоны-->
         <Image
+            x:Name="SecondBackground"
+            Margin="0,0,-0.333,160.667"
+            Source="/College/Kitchen.jpg"
+            Stretch="Fill"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Grid.RowSpan="3" 
+            />
+        <Image
+            x:Name="MainBackground"
             Margin="0,0,-0.333,160.667"
             Source="/College/ApartmentEvening.png"
             Stretch="Fill"
             Grid.ColumnSpan="3"
+            Opacity="1"
             Grid.RowSpan="3" 
             />
-
+        <!--Левый персонаж-->
         <Image 
             x:Name="LeftImageBody"
+            Source="/Persons/TikhonovaLena/LenaBody.png"
             Opacity="0"
             Grid.RowSpan="3"
             Margin="-11,0,9.667,123"
             />
         <Image 
-            x:Name="LeftImageClothes"          
-            Opacity="100"
+            x:Name="LeftImageClothes"   
+            Source="/Persons/TikhonovaLena/LenaClothesHome.png"
+            Opacity="0"
             Grid.RowSpan="3"
             Margin="-11,0,9.667,123"
             />
-
         <Image 
-            x:Name="LeftImageFace"            
+            x:Name="LeftImageClothes2"   
+            Source="/Persons/TikhonovaLena/LenaClothesStreet.png"
             Opacity="0"
             Grid.RowSpan="3"
             Margin="-11,0,9.667,123"
             />
 
         <Image 
-            x:Name="CenterLeftImageBody"         
+            x:Name="LeftImageFace"    
+            Source="/Persons/TikhonovaLena/LenaSmileFace.png"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="-11,0,9.667,123"
+            />
+        <!--Лево-центральный персонаж-->
+        <Image 
+            x:Name="CenterLeftImageBody"
+            Source="/Persons/YasenevaTasia/TasiaBody2.png"
             Grid.ColumnSpan="2"
             Opacity="0"
             Grid.RowSpan="3"
             Margin="358,0,174,123"
             />
         <Image 
-            x:Name="CenterLeftImageClothes"         
+            x:Name="CenterLeftImageClothes"  
+            Source="/Persons/YasenevaTasia/TasiaClothes2.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="358,0,174,123"
+            />
+        <Image 
+            x:Name="CenterLeftImageClothes2"  
+            Source="/Persons/YasenevaTasia/TasiaClothesStreet2.png"
             Grid.ColumnSpan="2"
             Opacity="0"
             Grid.RowSpan="3"
@@ -71,16 +102,26 @@
             />
 
         <Image 
-            x:Name="CenterLeftImageFace"          
+            x:Name="CenterLeftImageFace"  
+            Source="/Persons/YasenevaTasia/TasiaSmileFace2.png"
             Grid.ColumnSpan="2"
             Opacity="0"
             Grid.RowSpan="3"
             Margin="358,0,174,123"
             />
-
+        <!--Право-центральный персонаж-->
         <Image 
             x:Name="CenterRightImageBody"
             Source="/Persons/RyzhovaUlyana/UlyanaBody5.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="204,0,326.667,123"
+            Grid.Column="1"
+            />
+        <Image 
+            x:Name="CenterRightImageBody2"
+            Source="/Persons/RyzhovaUlyana/UlyanaBody4.png"
             Grid.ColumnSpan="2"
             Opacity="0"
             Grid.RowSpan="3"
@@ -96,7 +137,15 @@
             Margin="204,0,326.667,123"
             Grid.Column="1"
             />
-
+        <Image 
+            x:Name="CenterRightImageClothes2"
+            Source="/Persons/RyzhovaUlyana/UlyanaClothesStreet4.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="204,0,326.667,123"
+            Grid.Column="1"
+            />
         <Image 
             x:Name="CenterRightImageFace" 
             Source="/Persons/RyzhovaUlyana/UlyanaAngryFace5.png"
@@ -106,16 +155,36 @@
             Margin="204,0,326.667,123"
             Grid.Column="1"
             />
-
+        <Image 
+            x:Name="CenterRightImageFace2" 
+            Source="/Persons/RyzhovaUlyana/UlyanaSmileFace5.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="204,0,326.667,123"
+            Grid.Column="1"
+            />
+        <Image 
+            x:Name="CenterRightImageFace3" 
+            Source="/Persons/RyzhovaUlyana/UlyanaSmileFace4.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="204,0,326.667,123"
+            Grid.Column="1"
+            />
+        <!--Правый персонаж-->
         <Image 
             x:Name="RightImageBody"
+            Source="/Persons/KorshunovaAlice/AliceBody3.png"
             Opacity="0"
             Grid.RowSpan="3"
             Margin="45,0,-45.333,123"
             Grid.Column="2"
             />
         <Image 
-            x:Name="RightImageClothes"      
+            x:Name="RightImageClothes"   
+            Source="/Persons/KorshunovaAlice/AliceClothes3.png"
             Grid.ColumnSpan="2"
             Opacity="0"
             Grid.RowSpan="3"
@@ -124,13 +193,15 @@
             />
 
         <Image 
-            x:Name="RightImageFace"         
+            x:Name="RightImageFace" 
+            Source="/Persons/KorshunovaAlice/AliceHappyFace3.png"
             Grid.ColumnSpan="2"
             Opacity="0"
             Grid.RowSpan="3"
             Margin="45,0,-45.333,123"
             Grid.Column="2"
             />
+        <!--Декорации рамок-->
         <Image 
             Margin="-24,110.333,-25.333,0.667" 
             Source="/Decoration/RamaDialog.png" 
@@ -139,6 +210,7 @@
             Grid.Row="2"
             Opacity="100"
             />
+        <!--Текст-->
         <TextBlock
             x:Name="HistoryText"
             Grid.Row="2"
@@ -156,6 +228,7 @@
                 </Style>
             </TextBlock.Style>
         </TextBlock>
+        <!--Кнопки перехода-->
         <Button
                 x:Name="GoNext"
                 Grid.Column="2"

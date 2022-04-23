@@ -34,7 +34,7 @@ namespace test2isp11_17
 
         private void GoBack_Click(object sender, RoutedEventArgs e)
         {
-            GemeStartWindow6 openwindow = new GemeStartWindow6();
+            Apartment openwindow = new Apartment();
             openwindow.Show();
             this.Close();
         }

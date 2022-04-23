@@ -289,9 +289,6 @@
     <Resource Include="Persons\YasenevaTasia\TasiaBody.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Persons\YasenevaTasia\TasiaClothes.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Persons\YasenevaTasia\TasiaShyFace.png" />
   </ItemGroup>
   <ItemGroup>
@@ -390,16 +387,30 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaSmileFace4.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaClothesStreet4.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaBody4.png" />
+    <Resource Include="Persons\YasenevaTasia\TasiaClothesStreet2.png" />
+    <Resource Include="Persons\TikhonovaLena\LenaClothesStreet.png" />
+    <Resource Include="Persons\KorshunovaAlice\AliceHappyFace3.png" />
+    <Resource Include="Persons\KorshunovaAlice\AliceClothes3.png" />
+    <Resource Include="Persons\KorshunovaAlice\AliceBody3.png" />
+    <Resource Include="Persons\YasenevaTasia\TasiaSmileFace2.png" />
+    <Resource Include="Persons\YasenevaTasia\TasiaClothes2.png" />
+    <Resource Include="Persons\YasenevaTasia\TasiaBody2.png" />
+    <Resource Include="Persons\TikhonovaLena\LenaClothesHome.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaSmileFace5.png" />
     <Resource Include="Persons\RyzhovaUlyana\UlyanaAngryFace5.png" />
     <Resource Include="Persons\RyzhovaUlyana\UlyanaBody5.png" />
     <Resource Include="Persons\RyzhovaUlyana\UlyanaClothes5.png" />
     <Resource Include="GameLogo\logo.ico" />
+    <Resource Include="College\Kitchen.jpg" />
     <Content Include="BackSound\AlarmСlock.wav" />
     <Content Include="BackSound\Door.wav" />
     <Content Include="Music\HideAndSeek.wav" />
     <Content Include="Music\Tasia.wav" />
     <Content Include="Music\Ylyana.wav" />
-    <Resource Include="Persons\YasenevaTasia\TasiaClothes2.png" />
+    <Resource Include="Persons\YasenevaTasia\TasiaClothes.png" />
     <Resource Include="BackGround\BackGroundAlice.jpg" />
     <Resource Include="BackGround\BackGroundLena.jpg" />
     <Resource Include="BackGround\BackGroundTasia2.jpg" />

@@ -91,7 +91,7 @@
                 />
 
         <Image 
-                Source="/Persons/YasenevaTasia/TasiaClothes2.png"     
+                Source="/Persons/YasenevaTasia/TasiaClothes.png"     
                 Grid.ColumnSpan="3"
                 Opacity="100" 
                 Grid.RowSpan="3"

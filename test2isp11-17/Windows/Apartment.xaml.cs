@@ -43,6 +43,9 @@ namespace test2isp11_17.Windows
         char[] text = "    Время подходило к семи утра. Всем девушкам пора уже вставать, идти на учёбу. Но они похоже даже не думают об этом. Слишком уж вчерашняя вечеринка на них повлияла. Девочки до такой степени вчера отжигали до четырёх часов утра, так сказать, прощались с летом, что сейчас даже проснуться не могут. Но настырный будильник совершенно не жалел девчонок.".ToCharArray();
         char[] text1 = "    Первой это надоело Тасе. Она начала будить других девочек. Алиса быстро забегает в ванную комнату, захлопывая дверь перед Ульяниным носом.".ToCharArray();
         char[] text2 = "    Дура! - вскрикивает рыжая девушка вслед подруге.".ToCharArray();
+        char[] text3 = "    После слов послышалось журчание воды. Ульяна не стала стоять возле двери, девушка пошла на кухню. Кухня была совмещена вместе с залом. С левой стороны была комната девочек.".ToCharArray();
+        char[] text4 = "    На кухне уже стояла Лена. Блондинка зевала, делая всем кофе. Всё же сегодня ее очередь этим заниматься. Ульяна плюхнулась на стул, так же сонно зевая. Вскоре появилась Тася, так же садясь рядом. Три девушки пили кофе, совсем забыв о времени.".ToCharArray();
+        char[] text5 = "    Через какое-то время девушки уже были готовы к выходу. Алиса училась на дизайнера. Лена училась на зубного врача. Тася пошла на ветеринара. Ульяна на журналиста. Алиса из любой тряпки могла сделать классную вещь. Лена же любила мучить людей. Тася обожала животных, да и многое про них знала. А Ульяна могла вытащить любую информацию.".ToCharArray();
         private void Timer_Tick(object sender, EventArgs e)
         {
             try
@@ -112,8 +115,53 @@ namespace test2isp11_17.Windows
 
             if (click == 3)
             {
+                MainBackground.Opacity = 0;
+                HistoryText.Text = " ";
+                text = text3;
+                timer.Start();
+            }
+
+            if (click == 4)
+            {
+                CenterRightImageFace.Opacity = 0;
+                CenterRightImageFace2.Opacity = 1;
+                LeftImageBody.Opacity = 1;
+                LeftImageClothes.Opacity = 1;
+                LeftImageFace.Opacity = 1;
+                CenterLeftImageBody.Opacity = 1;
+                CenterLeftImageClothes.Opacity = 1;
+                CenterLeftImageFace.Opacity = 1;
+                HistoryText.Text = " ";
+                text = text4;
+                timer.Start();
+            }
+
+            if (click == 5)
+            {
+                CenterLeftImageClothes2.Opacity = 1;
+                CenterLeftImageClothes.Opacity = 0;
+                CenterLeftImageBody.Opacity = 0;
+                LeftImageClothes.Opacity = 0;
+                LeftImageClothes2.Opacity = 1;
+                RightImageBody.Opacity = 1;
+                RightImageClothes.Opacity = 1;
+                RightImageFace.Opacity = 1;
+                CenterRightImageBody.Opacity = 0;
+                CenterRightImageBody2.Opacity = 1;
+                CenterRightImageClothes.Opacity = 0;
+                CenterRightImageClothes2.Opacity = 1;
+                CenterRightImageFace2.Opacity = 0;
+                CenterRightImageFace3.Opacity = 1;
+                HistoryText.Text = " ";
+                text = text5;
+                timer.Start();
+            }
+
+
+            if (click == 6)
+            {
                 player.Stop();
-                GemeStartWindow3 openwindow = new GemeStartWindow3();
+                GemeStartWindow7 openwindow = new GemeStartWindow7();
                 openwindow.Show();
                 this.Close();
             }
