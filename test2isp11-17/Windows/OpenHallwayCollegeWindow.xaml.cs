@@ -46,6 +46,7 @@ namespace test2isp11_17
         char[] text3 = "    — Да нет. А вы собственно кто? Не первый раз уже задают такой вопрос.".ToCharArray();
         char[] text4 = "    — Садись, расскажу.".ToCharArray();
         char[] text5 = "    Девушка тут же кивнула. Все начали садиться на свои места. День на события вышел не особо красочным, так как был первый день. Так у девочек прошёл день в институте.".ToCharArray();
+        char[] text6 = "    Ульяна шла на пары. Девушка весело перебирала ногами, даже не смотря куда идет. Найдя нужный кабинет, она зашла туда. Резко остановившись, девушка на секунду подумала, что зашла вовсе не туда. Но нет, это была её группа. Только преподаватель другой. Девушка начала осматривать его. Темно-синие волосы, как море. Острые скулы. Легкая щетина украшала парня.".ToCharArray();
         private void Timer_Tick(object sender, EventArgs e)
         {
             try
@@ -146,10 +147,62 @@ namespace test2isp11_17
         }
         private void GoBack_Click(object sender, RoutedEventArgs e)
         {
-            player.Stop();
-            Apartment opemwindow = new Apartment();
-            opemwindow.Show();
-            this.Close();
+            click--;
+            if (click == 0)
+            {
+                CenterLeftImageBody.Opacity = 0;
+                CenterLeftImageClothes.Opacity = 0;
+                CenterLeftImageFace.Opacity = 0;
+                HistoryText.Text = " ";
+                text = text6;
+                timer.Start();
+            }
+
+            if (click == 1)
+            {
+                CenterRightImageBody.Opacity = 0;
+                CenterRightImageClothes.Opacity = 0;
+                CenterRightImageFace.Opacity = 0;
+                HistoryText.Text = " ";
+                SoundPlay();
+                text = text1;
+                timer.Start();
+            }
+
+            if (click == 2)
+            {
+                CenterLeftImageFace.Opacity = 1;
+                CenterLeftImageFace2.Opacity = 0;
+                HistoryText.Text = " ";
+                text = text2;
+                timer.Start();
+            }
+
+            if (click == 3)
+            {
+
+                HistoryText.Text = " ";
+                text = text3;
+                timer.Start();
+            }
+
+            if (click == 4)
+            {
+                CenterLeftImageFace.Opacity = 0;
+                CenterLeftImageFace2.Opacity = 1;
+                HistoryText.Text = " ";
+                text = text4;
+                timer.Start();
+            }
+
+
+            if (click == -1)
+            {
+                player.Stop();
+                Apartment opemwindow = new Apartment();
+                opemwindow.Show();
+                this.Close();
+            }
         }
     }
 }

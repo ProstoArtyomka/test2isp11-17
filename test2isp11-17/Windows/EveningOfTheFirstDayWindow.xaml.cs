@@ -26,9 +26,24 @@ namespace test2isp11_17.Windows
 
             MusicPlayer();
 
+            SoundPlay();
+
             Text();
 
             timer.Start();
+
+            LeftImageBody.Opacity = 1;
+            LeftImageClothes.Opacity = 1;
+            LeftImageFace.Opacity = 1;
+            CenterLeftImageBody.Opacity = 1;
+            CenterLeftImageClothes.Opacity = 1;
+            CenterLeftImageFace.Opacity = 1;
+            CenterRightImageBody.Opacity = 1;
+            CenterRightImageClothes.Opacity = 1;
+            CenterRightImageFace.Opacity = 1;
+            RightImageBody.Opacity = 1;
+            RightImageClothes.Opacity = 1;
+            RightImageFace.Opacity = 1;
 
         }
         DispatcherTimer timer = new DispatcherTimer();
@@ -39,12 +54,15 @@ namespace test2isp11_17.Windows
         }
 
         int i = 0;
-        char[] text = "    Ульяна шла на пары. Девушка весело перебирала ногами, даже не смотря куда идет. Найдя нужный кабинет, она зашла туда. Резко остановившись, девушка на секунду подумала, что зашла вовсе не туда. Но нет, это была её группа. Только преподаватель другой. Девушка начала осматривать его. Темно-синие волосы, как море. Острые скулы. Легкая щетина украшала парня.".ToCharArray();
-        char[] text1 = "    — Девушка, вы кабинетом ошиблись?".ToCharArray();
-        char[] text2 = "    Молодой преподаватель помахал перед её лицом ладонью. Ульяна тут же опомнилась, поняв, что она пялится на парня.".ToCharArray();
-        char[] text3 = "    — Да нет. А вы собственно кто? Не первый раз уже задают такой вопрос.".ToCharArray();
-        char[] text4 = "    — Садись, расскажу.".ToCharArray();
-        char[] text5 = "    Девушка тут же кивнула. Все начали садиться на свои места. День на события вышел не особо красочным, так как был первый день. Так у девочек прошёл день в институте.".ToCharArray();
+        char[] text = "    Ульяна первая зашла в комнату, а за ней все остальные. Тут же девочки замерли в шоке. По всему залу валялись вещи, они были мужскими. На столе лежали пустые коробки.".ToCharArray();
+        char[] text1 = "    — Может нас грабят?  Ульяне показалось это самым логичным решением.".ToCharArray();
+        char[] text2 = "    Но девушки даже обдумать это не успели, как дверь сзади них открылись. Зашла комендантша Лариса. А вслед за ней ещё два парня, которые занесли четыре матраса.".ToCharArray();
+        char[] text3 = "    В этот момент из спальни вышли четыре парня.".ToCharArray();
+        char[] text4 = "    Один из них был уже знаком, он являлся Владом.".ToCharArray();
+        char[] text5 = "    Следом вышли еще два парня, оба блондины, почти одинаковые черты лица. Так же оба голубоглазые. ".ToCharArray();
+        char[] text6 = "    Самый последний вышел темноволосый с ярко-синими карими глазами, с очаровательной улыбкой.".ToCharArray();
+        char[] text7 = "    Четыре парня словно с обложки модного журнала. Обе стороны замерли, смотря друг на друга.".ToCharArray();
+        char[] text8 = "    Ульяна первая зашла в комнату, а за ней все остальные. Тут же девочки замерли в шоке. По всему залу валялись вещи, они были мужскими. На столе лежали пустые коробки.".ToCharArray();
         private void Timer_Tick(object sender, EventArgs e)
         {
             try
@@ -64,7 +82,7 @@ namespace test2isp11_17.Windows
         private void MusicPlayer()
         {
             player = new MediaPlayer();
-            player.Open(new Uri("..\\..\\Music\\AlleyCat.WAV", UriKind.RelativeOrAbsolute));
+            player.Open(new Uri("..\\..\\Music\\Sleep.WAV", UriKind.RelativeOrAbsolute));
             player.MediaEnded += new EventHandler(Media_Ended);
             player.Play();
             player.Volume = 0.1;
@@ -88,10 +106,6 @@ namespace test2isp11_17.Windows
             click++;
             if (click == 1)
             {
-                CenterLeftImageBody.Opacity = 1;
-                CenterLeftImageClothes.Opacity = 1;
-                CenterLeftImageFace.Opacity = 1;
-                SoundPlay();
                 HistoryText.Text = " ";
                 text = text1;
                 timer.Start();
@@ -99,18 +113,16 @@ namespace test2isp11_17.Windows
 
             if (click == 2)
             {
-                CenterRightImageBody.Opacity = 1;
-                CenterRightImageClothes.Opacity = 1;
-                CenterRightImageFace.Opacity = 1;
                 HistoryText.Text = " ";
+                SoundPlay();
                 text = text2;
                 timer.Start();
             }
 
             if (click == 3)
             {
-                CenterLeftImageFace.Opacity = 0;
-                CenterLeftImageFace2.Opacity = 1;
+                RightImageFace2.Opacity = 1;
+                RightImageFace.Opacity = 0;
                 HistoryText.Text = " ";
                 text = text3;
                 timer.Start();
@@ -118,6 +130,22 @@ namespace test2isp11_17.Windows
 
             if (click == 4)
             {
+                LeftImageBody.Opacity = 0;
+                LeftImageClothes.Opacity = 0;
+                LeftImageFace.Opacity = 0;
+                CenterLeftImageBody.Opacity = 0;
+                CenterLeftImageClothes.Opacity = 0;
+                CenterLeftImageFace.Opacity = 0;
+                CenterRightImageBody.Opacity = 0;
+                CenterRightImageClothes.Opacity = 0;
+                CenterRightImageFace.Opacity = 0;
+                RightImageBody.Opacity = 0;
+                RightImageClothes.Opacity = 0;
+                RightImageFace2.Opacity = 0;
+
+                LeftImageBody2.Opacity = 1;
+                LeftImageClothes2.Opacity = 1;
+                LeftImageFace2.Opacity = 1;
 
                 HistoryText.Text = " ";
                 text = text4;
@@ -126,18 +154,37 @@ namespace test2isp11_17.Windows
 
             if (click == 5)
             {
-                CenterLeftImageFace.Opacity = 1;
-                CenterLeftImageFace2.Opacity = 0;
+                CenterLeftImageBody2.Opacity = 1;
+                CenterLeftImageClothes2.Opacity = 1;
+                CenterLeftImageFace2.Opacity = 1;
+                CenterRightImageClothes2.Opacity = 1;
+                CenterRightImageFace2.Opacity = 1;
                 HistoryText.Text = " ";
                 text = text5;
                 timer.Start();
             }
 
-
             if (click == 6)
             {
+                RightImageBody2.Opacity = 1;
+                RightImageClothes2.Opacity = 1;
+                RightImageFace3.Opacity = 1;
+                HistoryText.Text = " ";
+                text = text6;
+                timer.Start();
+            }
+
+            if (click == 7)
+            {
+                HistoryText.Text = " ";
+                text = text7;
+                timer.Start();
+            }
+
+            if (click == 8)
+            {
                 player.Stop();
-                EveningOfTheFirstDayWindow openwindow = new EveningOfTheFirstDayWindow();
+                OpenVladWindow openwindow = new OpenVladWindow();
                 openwindow.Show();
                 this.Close();
             }
@@ -145,10 +192,92 @@ namespace test2isp11_17.Windows
         }
         private void GoBack_Click(object sender, RoutedEventArgs e)
         {
-            player.Stop();
-            Apartment opemwindow = new Apartment();
-            opemwindow.Show();
-            this.Close();
+            click--;
+            if (click == 0)
+            {
+                HistoryText.Text = " ";
+                text = text8;
+                timer.Start();
+            }
+
+            if (click == 1)
+            {
+                HistoryText.Text = " ";
+                SoundPlay();
+                text = text1;
+                timer.Start();
+            }
+
+            if (click == 2)
+            {
+                RightImageFace2.Opacity = 1;
+                RightImageFace.Opacity = 0;
+                HistoryText.Text = " ";
+                text = text2;
+                timer.Start();
+            }
+
+            if (click == 3)
+            {
+                LeftImageBody.Opacity = 0;
+                LeftImageClothes.Opacity = 0;
+                LeftImageFace.Opacity = 0;
+                CenterLeftImageBody.Opacity = 0;
+                CenterLeftImageClothes.Opacity = 0;
+                CenterLeftImageFace.Opacity = 0;
+                CenterRightImageBody.Opacity = 0;
+                CenterRightImageClothes.Opacity = 0;
+                CenterRightImageFace.Opacity = 0;
+                RightImageBody.Opacity = 0;
+                RightImageClothes.Opacity = 0;
+                RightImageFace2.Opacity = 0;
+
+                LeftImageBody2.Opacity = 1;
+                LeftImageClothes2.Opacity = 1;
+                LeftImageFace2.Opacity = 1;
+
+                HistoryText.Text = " ";
+                text = text3;
+                timer.Start();
+            }
+
+            if (click == 4)
+            {
+                CenterLeftImageBody2.Opacity = 1;
+                CenterLeftImageClothes2.Opacity = 1;
+                CenterLeftImageFace2.Opacity = 1;
+                CenterRightImageClothes2.Opacity = 1;
+                CenterRightImageFace2.Opacity = 1;
+                HistoryText.Text = " ";
+                text = text4;
+                timer.Start();
+            }
+
+            if (click == 5)
+            {
+                RightImageBody2.Opacity = 1;
+                RightImageClothes2.Opacity = 1;
+                RightImageFace3.Opacity = 1;
+                HistoryText.Text = " ";
+                text = text5;
+                timer.Start();
+            }
+
+            if (click == 6)
+            {
+                HistoryText.Text = " ";
+                text = text6;
+                timer.Start();
+            }
+
+            if (click == -1)
+            {
+                player.Stop();
+                GemeStartWindow7 opemwindow = new GemeStartWindow7();
+                opemwindow.Show();
+                this.Close();
+            }
+
         }
     }
 }

@@ -97,6 +97,9 @@
     <Compile Include="Windows\EveningOfTheFirstDayWindow.xaml.cs">
       <DependentUpon>EveningOfTheFirstDayWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\EveningOfTheFirstDayWindow2.xaml.cs">
+      <DependentUpon>EveningOfTheFirstDayWindow2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\OpenLenaWindow.xaml.cs">
       <DependentUpon>OpenLenaWindow.xaml</DependentUpon>
     </Compile>
@@ -138,6 +141,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\EveningOfTheFirstDayWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\EveningOfTheFirstDayWindow2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -391,6 +398,18 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Persons\KorshunovaAlice\AliceSmileFace2.png" />
+    <Resource Include="Persons\TikhonovaLena\LenaBody3.png" />
+    <Resource Include="Persons\TikhonovaLena\LenaClothesStreet3.png" />
+    <Resource Include="Persons\TikhonovaLena\LenaSupriseFace3.png" />
+    <Resource Include="Persons\YasenevaTasia\TasiaClothesStreet.png" />
+    <Resource Include="Persons\YasenevaTasia\TasiaShyX2Face.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaBody2.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaClothesCollege2.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaShockedFace2.png" />
+    <Resource Include="Persons\KorshunovaAlice\AliceClothesStreet2.png" />
+    <Resource Include="Persons\KorshunovaAlice\AliceBody2.png" />
+    <Resource Include="Persons\KorshunovaAlice\AliceShockedFace2.png" />
     <Resource Include="Persons\RyzhovaUlyana\UlyanaShyFace4.png" />
     <Resource Include="Persons\RyzhovaUlyana\UlyanaNormalFace4.png" />
     <Resource Include="Persons\RyzhovaUlyana\UlyanaClothesCollegeOK4.png" />
@@ -421,8 +440,12 @@
     <Resource Include="College\Auditorium.jpg" />
     <Resource Include="College\ApartmentNight.jpg" />
     <Content Include="Music\AlleyCat.wav" />
+    <Content Include="Music\Artyom.wav" />
+    <Content Include="Music\SashaAndPhil.wav" />
+    <Content Include="Music\Sleep.wav" />
     <Content Include="Music\HideAndSeek.wav" />
     <Content Include="Music\Tasia.wav" />
+    <Content Include="Music\Vlad.wav" />
     <Content Include="Music\Ylyana.wav" />
     <Resource Include="Persons\YasenevaTasia\TasiaClothes.png" />
     <Resource Include="BackGround\BackGroundAlice.jpg" />

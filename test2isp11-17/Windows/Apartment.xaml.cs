@@ -46,6 +46,7 @@ namespace test2isp11_17.Windows
         char[] text3 = "    После слов послышалось журчание воды. Ульяна не стала стоять возле двери, девушка пошла на кухню. Кухня была совмещена вместе с залом. С левой стороны была комната девочек.".ToCharArray();
         char[] text4 = "    На кухне уже стояла Лена. Блондинка зевала, делая всем кофе. Всё же сегодня ее очередь этим заниматься. Ульяна плюхнулась на стул, так же сонно зевая. Вскоре появилась Тася, так же садясь рядом. Три девушки пили кофе, совсем забыв о времени.".ToCharArray();
         char[] text5 = "    Через какое-то время девушки уже были готовы к выходу. Алиса училась на дизайнера. Лена училась на зубного врача. Тася пошла на ветеринара. Ульяна на журналиста. Алиса из любой тряпки могла сделать классную вещь. Лена же любила мучить людей. Тася обожала животных, да и многое про них знала. А Ульяна могла вытащить любую информацию.".ToCharArray();
+        char[] text6 = "    Время подходило к семи утра. Всем девушкам пора уже вставать, идти на учёбу. Но они похоже даже не думают об этом. Слишком уж вчерашняя вечеринка на них повлияла. Девочки до такой степени вчера отжигали до четырёх часов утра, так сказать, прощались с летом, что сейчас даже проснуться не могут. Но настырный будильник совершенно не жалел девчонок.".ToCharArray();
         private void Timer_Tick(object sender, EventArgs e)
         {
             try
@@ -169,10 +170,78 @@ namespace test2isp11_17.Windows
         }
         private void GoBack_Click(object sender, RoutedEventArgs e)
         {
-            player.Stop();
-            GemeStartWindow5 opemwindow = new GemeStartWindow5();
-            opemwindow.Show();
-            this.Close();
+            click--;
+            if (click == 0)
+            {
+                HistoryText.Text = " ";
+                text = text6;
+                timer.Start();
+            }
+
+            if (click == 1)
+            {
+                CenterRightImageBody.Opacity = 0;
+                CenterRightImageClothes.Opacity = 0;
+                CenterRightImageFace.Opacity = 0;
+                SoundPlay();
+                HistoryText.Text = " ";
+                text = text1;
+                timer.Start();
+            }
+
+            if (click == 2)
+            {
+                MainBackground.Opacity = 1;
+                HistoryText.Text = " ";
+                SoundPlay2();
+                text = text2;
+                timer.Start();
+            }
+
+            if (click == 3)
+            {
+                CenterRightImageFace.Opacity = 1;
+                CenterRightImageFace2.Opacity = 0;
+                LeftImageBody.Opacity = 0;
+                LeftImageClothes.Opacity = 0;
+                LeftImageFace.Opacity = 0;
+                CenterLeftImageBody.Opacity = 0;
+                CenterLeftImageClothes.Opacity = 0;
+                CenterLeftImageFace.Opacity = 0;
+                HistoryText.Text = " ";
+                text = text3;
+                timer.Start();
+            }
+
+            if (click == 4)
+            {
+                CenterLeftImageClothes2.Opacity = 0;
+                CenterLeftImageClothes.Opacity = 1;
+                CenterLeftImageBody.Opacity = 1;
+                LeftImageClothes.Opacity = 1;
+                LeftImageClothes2.Opacity = 0;
+                RightImageBody.Opacity = 0;
+                RightImageClothes.Opacity = 0;
+                RightImageFace.Opacity = 0;
+                CenterRightImageBody.Opacity = 1;
+                CenterRightImageBody2.Opacity = 0;
+                CenterRightImageClothes.Opacity = 1;
+                CenterRightImageClothes2.Opacity = 0;
+                CenterRightImageFace2.Opacity = 1;
+                CenterRightImageFace3.Opacity = 0;
+                HistoryText.Text = " ";
+                text = text4;
+                timer.Start();
+            }
+
+
+            if (click == -1)
+            {
+                player.Stop();
+                GemeStartWindow5 opemwindow = new GemeStartWindow5();
+                opemwindow.Show();
+                this.Close();
+            }
         }
     }
 }
