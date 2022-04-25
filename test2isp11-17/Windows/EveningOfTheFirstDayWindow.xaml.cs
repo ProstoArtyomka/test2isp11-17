@@ -203,15 +203,15 @@ namespace test2isp11_17.Windows
             if (click == 1)
             {
                 HistoryText.Text = " ";
-                SoundPlay();
                 text = text1;
                 timer.Start();
             }
 
             if (click == 2)
             {
-                RightImageFace2.Opacity = 1;
-                RightImageFace.Opacity = 0;
+                SoundPlay();
+                RightImageFace2.Opacity = 0;
+                RightImageFace.Opacity = 1;
                 HistoryText.Text = " ";
                 text = text2;
                 timer.Start();
@@ -219,22 +219,22 @@ namespace test2isp11_17.Windows
 
             if (click == 3)
             {
-                LeftImageBody.Opacity = 0;
-                LeftImageClothes.Opacity = 0;
-                LeftImageFace.Opacity = 0;
-                CenterLeftImageBody.Opacity = 0;
-                CenterLeftImageClothes.Opacity = 0;
-                CenterLeftImageFace.Opacity = 0;
-                CenterRightImageBody.Opacity = 0;
-                CenterRightImageClothes.Opacity = 0;
-                CenterRightImageFace.Opacity = 0;
-                RightImageBody.Opacity = 0;
-                RightImageClothes.Opacity = 0;
-                RightImageFace2.Opacity = 0;
+                LeftImageBody.Opacity = 1;
+                LeftImageClothes.Opacity = 1;
+                LeftImageFace.Opacity = 1;
+                CenterLeftImageBody.Opacity = 1;
+                CenterLeftImageClothes.Opacity = 1;
+                CenterLeftImageFace.Opacity = 1;
+                CenterRightImageBody.Opacity = 1;
+                CenterRightImageClothes.Opacity = 1;
+                CenterRightImageFace.Opacity = 1;
+                RightImageBody.Opacity = 1;
+                RightImageClothes.Opacity = 1;
+                RightImageFace2.Opacity = 1;
 
-                LeftImageBody2.Opacity = 1;
-                LeftImageClothes2.Opacity = 1;
-                LeftImageFace2.Opacity = 1;
+                LeftImageBody2.Opacity = 0;
+                LeftImageClothes2.Opacity = 0;
+                LeftImageFace2.Opacity = 0;
 
                 HistoryText.Text = " ";
                 text = text3;
@@ -243,11 +243,11 @@ namespace test2isp11_17.Windows
 
             if (click == 4)
             {
-                CenterLeftImageBody2.Opacity = 1;
-                CenterLeftImageClothes2.Opacity = 1;
-                CenterLeftImageFace2.Opacity = 1;
-                CenterRightImageClothes2.Opacity = 1;
-                CenterRightImageFace2.Opacity = 1;
+                CenterLeftImageBody2.Opacity = 0;
+                CenterLeftImageClothes2.Opacity = 0;
+                CenterLeftImageFace2.Opacity = 0;
+                CenterRightImageClothes2.Opacity = 0;
+                CenterRightImageFace2.Opacity = 0;
                 HistoryText.Text = " ";
                 text = text4;
                 timer.Start();
@@ -255,9 +255,9 @@ namespace test2isp11_17.Windows
 
             if (click == 5)
             {
-                RightImageBody2.Opacity = 1;
-                RightImageClothes2.Opacity = 1;
-                RightImageFace3.Opacity = 1;
+                RightImageBody2.Opacity = 0;
+                RightImageClothes2.Opacity = 0;
+                RightImageFace3.Opacity = 0;
                 HistoryText.Text = " ";
                 text = text5;
                 timer.Start();
@@ -277,7 +277,6 @@ namespace test2isp11_17.Windows
                 opemwindow.Show();
                 this.Close();
             }
-
         }
     }
 }

@@ -28,6 +28,15 @@
         </Grid.RowDefinitions>
         <!--Фоны-->
         <Image
+            x:Name="SecondBackground"
+            Margin="0,0,0,50.667"
+            Source="/College/EveningCollege.jpg"
+            Stretch="Fill"
+            Grid.ColumnSpan="3"
+            Opacity="1"
+            Grid.RowSpan="3" 
+            />
+        <Image
             x:Name="MainBackground"
             Margin="0,0,0,50.667"
             Source="/College/ApartmentNight.jpg"
@@ -60,25 +69,33 @@
             />
         <Image 
             x:Name="LeftImageBody2"
-            Source="/Persons/Vlad/VladBody3.png"
+            Source="/Persons/Artyom/ArtyomBody1.png"
             Opacity="0"
             Grid.RowSpan="3"
             Margin="-11,0,9.667,123"
             />
         <Image 
             x:Name="LeftImageClothes2"
-            Source="/Persons/Vlad/VladNormalClothes3.png"
+            Source="/Persons/Artyom/ArtyomClothesHome1.png"
             Opacity="0"
             Grid.RowSpan="3"
             Margin="-11,0,9.667,123"
             />
         <Image 
             x:Name="LeftImageFace2" 
-            Source="/Persons/Vlad/VladSmileFace3.png"
+            Source="/Persons/Artyom/ArtyomSmileFace1.png"
             Opacity="0"
             Grid.RowSpan="3"
             Margin="-11,0,9.667,123"
             />
+        <Image 
+            x:Name="LeftImageFace3" 
+            Source="/Persons/Artyom/ArtyomGrinFace1.png"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="-11,0,9.667,123"
+            />
+        
         <!--Лево-центральный персонаж-->
         <Image 
             x:Name="CenterLeftImageBody"
@@ -103,10 +120,9 @@
             Grid.RowSpan="3"
             Margin="358,0,174,121"
             />
-
         <Image 
             x:Name="CenterLeftImageBody2"
-            Source="/Persons/Phil/PhilBody1.png"
+            Source="/Persons/KorshunovaAlice/AliceBody2.png"
             Grid.ColumnSpan="2"
             Opacity="0"
             Grid.RowSpan="3"
@@ -114,7 +130,7 @@
             />
         <Image 
             x:Name="CenterLeftImageClothes2" 
-            Source="/Persons/Phil/PhilPivoClothes1.png"
+            Source="/Persons/KorshunovaAlice/AliceClothesStreet2.png"
             Grid.ColumnSpan="2"
             Opacity="0"
             Grid.RowSpan="3"
@@ -122,7 +138,47 @@
             />
         <Image 
             x:Name="CenterLeftImageFace2"
-            Source="/Persons/Phil/PhilSmileFace1.png"
+            Source="/Persons/KorshunovaAlice/AliceSmileFace2.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="358,0,174,121"
+            />
+        <Image 
+            x:Name="CenterLeftImageBody3"
+            Source="/Persons/Vlad/VladBody2.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="358,0,174,121"
+            />
+        <Image 
+            x:Name="CenterLeftImageClothes3" 
+            Source="/Persons/Vlad/VladClothesHome2.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="358,0,174,121"
+            />
+        <Image 
+            x:Name="CenterLeftImageFace3"
+            Source="/Persons/Vlad/VladSmileFace2.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="358,0,174,121"
+            />
+        <Image 
+            x:Name="CenterLeftImageFace4"
+            Source="/Persons/Vlad/VladShyFace2.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="358,0,174,121"
+            />
+        <Image 
+            x:Name="CenterLeftImageFace5"
+            Source="/Persons/YasenevaTasia/TasiaGuiltyFace1.png"
             Grid.ColumnSpan="2"
             Opacity="0"
             Grid.RowSpan="3"
@@ -157,8 +213,17 @@
             Grid.Column="1"
             />
         <Image 
+            x:Name="CenterRightImageBody2"
+            Source="/Persons/Phil/PhilBody3.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="204,0,326.667,123"
+            Grid.Column="1"
+            />
+        <Image 
             x:Name="CenterRightImageClothes2"
-            Source="/Persons/Sasha/SashaNormalClothes3.png"
+            Source="/Persons/Phil/PhilClothesPivo3.png"
             Grid.ColumnSpan="2"
             Opacity="0"
             Grid.RowSpan="3"
@@ -167,7 +232,70 @@
             />
         <Image 
             x:Name="CenterRightImageFace2"
-            Source="/Persons/Sasha/SashaNormalFace3.png"
+            Source="/Persons/Phil/PhilSmileFace3.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="204,0,326.667,123"
+            Grid.Column="1"
+            />
+        <Image 
+            x:Name="CenterRightImageFace5"
+            Source="/Persons/Phil/PhilGrinFace3.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="204,0,326.667,123"
+            Grid.Column="1"
+            />
+        <Image 
+            x:Name="CenterRightImageBody3"
+            Source="/Persons/RyzhovaUlyana/UlyanaBody1.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="204,0,326.667,123"
+            Grid.Column="1"
+            />
+        <Image 
+            x:Name="CenterRightImageClothes3"
+            Source="/Persons/RyzhovaUlyana/UlyanaClothesCollege1.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="204,0,326.667,123"
+            Grid.Column="1"
+            />
+        <Image 
+            x:Name="CenterRightImageFace3"
+            Source="/Persons/RyzhovaUlyana/UlyanaInteresFace1.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="204,0,326.667,123"
+            Grid.Column="1"
+            />
+        <Image 
+            x:Name="CenterRightImageBody4"
+            Source="/Persons/TikhonovaLena/LenaBody.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="204,0,326.667,123"
+            Grid.Column="1"
+            />
+        <Image 
+            x:Name="CenterRightImageClothes4"
+            Source="/Persons/TikhonovaLena/LenaClothes.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="204,0,326.667,123"
+            Grid.Column="1"
+            />
+        <Image 
+            x:Name="CenterRightImageFace4"
+            Source="/Persons/TikhonovaLena/LenaSeriousFace.png"
             Grid.ColumnSpan="2"
             Opacity="0"
             Grid.RowSpan="3"
@@ -192,19 +320,8 @@
             Margin="45,0,-45.333,123"
             Grid.Column="2"
             />
-
         <Image 
             x:Name="RightImageFace"
-            Source="/Persons/KorshunovaAlice/AliceShockedFace2.png"
-            Grid.ColumnSpan="2"
-            Opacity="0"
-            Grid.RowSpan="3"
-            Margin="45,0,-45.333,123"
-            Grid.Column="2"
-            />
-
-        <Image 
-            x:Name="RightImageFace2"
             Source="/Persons/KorshunovaAlice/AliceSmileFace2.png"
             Grid.ColumnSpan="2"
             Opacity="0"
@@ -212,10 +329,9 @@
             Margin="45,0,-45.333,123"
             Grid.Column="2"
             />
-
         <Image 
             x:Name="RightImageBody2"
-            Source="/Persons/Artyom/ArtyomBody3.png"
+            Source="/Persons/Larisa/LarisaBody2.png"
             Opacity="0"
             Grid.RowSpan="3"
             Margin="45,0,-45.333,123"
@@ -223,17 +339,50 @@
             />
         <Image 
             x:Name="RightImageClothes2" 
-            Source="/Persons/Artyom/ArtyomClothes3.png"
+            Source="/Persons/Larisa/LarisaClothes2.png"
             Grid.ColumnSpan="2"
             Opacity="0"
             Grid.RowSpan="3"
             Margin="45,0,-45.333,123"
             Grid.Column="2"
             />
-
+        <Image 
+            x:Name="RightImageFace2"
+            Source="/Persons/Larisa/LarisaRageFace2.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="45,0,-45.333,123"
+            Grid.Column="2"
+            />
+        <Image 
+            x:Name="RightImageBody3"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="45,0,-45.333,123"
+            Grid.Column="2"
+            />
+        <Image 
+            x:Name="RightImageClothes3" 
+            Source="/Persons/Sasha/SashaClothes2.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="45,0,-45.333,123"
+            Grid.Column="2"
+            />
         <Image 
             x:Name="RightImageFace3"
-            Source="/Persons/Artyom/ArtyomNormalFace3.png"
+            Source="/Persons/Sasha/SashaSmileFace2.png"
+            Grid.ColumnSpan="2"
+            Opacity="0"
+            Grid.RowSpan="3"
+            Margin="45,0,-45.333,123"
+            Grid.Column="2"
+            />
+        <Image 
+            x:Name="RightImageFace4"
+            Source="/Persons/Sasha/SashaGrinFace2.png"
             Grid.ColumnSpan="2"
             Opacity="0"
             Grid.RowSpan="3"

@@ -1,0 +1,42 @@
+﻿<Window x:Class="test2isp11_17.Windows.FinalWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:local="clr-namespace:test2isp11_17.Windows"
+        mc:Ignorable="d"
+        Title="FinalWindow"
+        Height="900"
+        Width="1600"
+        MaxHeight="900"
+        MaxWidth="1600"
+        MinHeight="900"
+        MinWidth="1600"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image gif:ImageBehavior.AnimatedSource="/Gifs/Final.gif" 
+               Stretch="Fill"
+               />
+        <Button
+                x:Name="GoNext"
+                Grid.Row="0"
+                Click="GoNext_Click"
+                Opacity="0" 
+                Margin="1462,0,0,180"  
+                />
+
+        <Button
+                x:Name="GoBack"
+                Grid.Column="0"
+                Grid.Row="0"
+                Click="GoBack_Click"
+                Opacity="0"
+                Margin="0,0,1477,180" 
+                />
+    </Grid>
+</Window>

@@ -100,6 +100,9 @@
     <Compile Include="Windows\EveningOfTheFirstDayWindow2.xaml.cs">
       <DependentUpon>EveningOfTheFirstDayWindow2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\FinalWindow.xaml.cs">
+      <DependentUpon>FinalWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\OpenLenaWindow.xaml.cs">
       <DependentUpon>OpenLenaWindow.xaml</DependentUpon>
     </Compile>
@@ -145,6 +148,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\EveningOfTheFirstDayWindow2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\FinalWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -372,15 +379,6 @@
     <Resource Include="Gifs\Death.gif" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Persons\Larisa\LarisaBody2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Persons\Larisa\LarisaNotSmiletFace2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Persons\Larisa\LarisaClothes2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Gifs\Nothing.gif" />
   </ItemGroup>
   <ItemGroup>
@@ -398,6 +396,28 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Persons\Sasha\SashaGrinFace2.png" />
+    <Resource Include="Persons\Phil\PhilGrinFace3.png" />
+    <Resource Include="Persons\Artyom\ArtyomGrinFace1.png" />
+    <Resource Include="Persons\YasenevaTasia\TasiaGuiltyFace1.png" />
+    <Resource Include="Persons\TikhonovaLena\LenaSeriousFace.png" />
+    <Resource Include="Persons\Vlad\VladShyFace2.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaInteresFace1.png" />
+    <Resource Include="Persons\RyzhovaUlyana\UlyanaClothesCollege1.png" />
+    <Resource Include="Persons\Vlad\VladBody2.png" />
+    <Resource Include="Persons\Vlad\VladClothesHome2.png" />
+    <Resource Include="Persons\Vlad\VladSmileFace2.png" />
+    <Resource Include="Persons\Artyom\ArtyomBody1.png" />
+    <Resource Include="Persons\Artyom\ArtyomClothesHome1.png" />
+    <Resource Include="Persons\Artyom\ArtyomSmileFace1.png" />
+    <Resource Include="Persons\Sasha\SashaClothes2.png" />
+    <Resource Include="Persons\Sasha\SashaSmileFace2.png" />
+    <Resource Include="Persons\Phil\PhilBody3.png" />
+    <Resource Include="Persons\Phil\PhilClothesPivo3.png" />
+    <Resource Include="Persons\Phil\PhilSmileFace3.png" />
+    <Resource Include="Persons\Larisa\LarisaBody2.png" />
+    <Resource Include="Persons\Larisa\LarisaClothes2.png" />
+    <Resource Include="Persons\Larisa\LarisaRageFace2.png" />
     <Resource Include="Persons\KorshunovaAlice\AliceSmileFace2.png" />
     <Resource Include="Persons\TikhonovaLena\LenaBody3.png" />
     <Resource Include="Persons\TikhonovaLena\LenaClothesStreet3.png" />
@@ -439,8 +459,11 @@
     <Content Include="BackSound\Door.wav" />
     <Resource Include="College\Auditorium.jpg" />
     <Resource Include="College\ApartmentNight.jpg" />
+    <Content Include="BackSound\Sweep.wav" />
+    <Resource Include="Gifs\Final.gif" />
     <Content Include="Music\AlleyCat.wav" />
     <Content Include="Music\Artyom.wav" />
+    <Content Include="Music\LadyLuck.wav" />
     <Content Include="Music\SashaAndPhil.wav" />
     <Content Include="Music\Sleep.wav" />
     <Content Include="Music\HideAndSeek.wav" />
