@@ -25,21 +25,27 @@ namespace test2isp11_17.Windows
         {
             InitializeComponent();
 
+            //Вывод песен
             MusicPlayer();
 
+            //Вывод текста
             Text();
 
+            //Активация Таймера
             timer.Start();
 
         }
+        //Название таймера
         DispatcherTimer timer = new DispatcherTimer();
         private void Text()
         {
+            //Время вывода одного символа
             timer.Interval = new TimeSpan(0, 0, 0, 0, 40);
             timer.Tick += Timer_Tick;
         }
 
         int i = 0;
+        //Заготовки текста
         char[] text = "    Время подходило к семи утра. Всем девушкам пора уже вставать, идти на учёбу. Но они похоже даже не думают об этом. Слишком уж вчерашняя вечеринка на них повлияла. Девочки до такой степени вчера отжигали до четырёх часов утра, так сказать, прощались с летом, что сейчас даже проснуться не могут. Но настырный будильник совершенно не жалел девчонок.".ToCharArray();
         char[] text1 = "    Первой это надоело Тасе. Она начала будить других девочек. Алиса быстро забегает в ванную комнату, захлопывая дверь перед Ульяниным носом.".ToCharArray();
         char[] text2 = "    Дура! - вскрикивает рыжая девушка вслед подруге.".ToCharArray();
@@ -47,6 +53,8 @@ namespace test2isp11_17.Windows
         char[] text4 = "    На кухне уже стояла Лена. Блондинка зевала, делая всем кофе. Всё же сегодня ее очередь этим заниматься. Ульяна плюхнулась на стул, так же сонно зевая. Вскоре появилась Тася, так же садясь рядом. Три девушки пили кофе, совсем забыв о времени.".ToCharArray();
         char[] text5 = "    Через какое-то время девушки уже были готовы к выходу. Алиса училась на дизайнера. Лена училась на зубного врача. Тася пошла на ветеринара. Ульяна на журналиста. Алиса из любой тряпки могла сделать классную вещь. Лена же любила мучить людей. Тася обожала животных, да и многое про них знала. А Ульяна могла вытащить любую информацию.".ToCharArray();
         char[] text6 = "    Время подходило к семи утра. Всем девушкам пора уже вставать, идти на учёбу. Но они похоже даже не думают об этом. Слишком уж вчерашняя вечеринка на них повлияла. Девочки до такой степени вчера отжигали до четырёх часов утра, так сказать, прощались с летом, что сейчас даже проснуться не могут. Но настырный будильник совершенно не жалел девчонок.".ToCharArray();
+        
+        //Метод построчного вывода текста
         private void Timer_Tick(object sender, EventArgs e)
         {
             try
@@ -60,9 +68,11 @@ namespace test2isp11_17.Windows
             }
             i++;       
         }
-
+        //Название медиаплеера
         private MediaPlayer player;
         private MediaPlayer sound;
+
+        //Музыкальный метод плеера
         private void MusicPlayer()
         {
             player = new MediaPlayer();
@@ -71,6 +81,7 @@ namespace test2isp11_17.Windows
             player.Play();
             player.Volume = 0.1;
         }
+        //Звуковой метод плеера 1
         private void SoundPlay()
         {
             sound = new MediaPlayer();
@@ -78,6 +89,7 @@ namespace test2isp11_17.Windows
             sound.Play();
             sound.Volume = 0.3;
         }
+        //Звуковой метод плеера 2
         private void SoundPlay2()
         {
             sound = new MediaPlayer();
@@ -85,6 +97,7 @@ namespace test2isp11_17.Windows
             sound.Play();
             sound.Volume = 0.3;
         }
+        //Метод зацикливания песни
         private void Media_Ended(object sender, EventArgs e)
         {
             player.Position = TimeSpan.Zero;
@@ -92,6 +105,7 @@ namespace test2isp11_17.Windows
             player.Volume = 0.1;
         }
         int click = 0;
+        //Кнопка перехода вперед
         private void GoNext_Click(object sender, RoutedEventArgs e)
         {
             click++;
@@ -168,6 +182,8 @@ namespace test2isp11_17.Windows
             }
 
         }
+
+        //Кнопка перехода Назад
         private void GoBack_Click(object sender, RoutedEventArgs e)
         {
             click--;
